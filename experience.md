@@ -13,17 +13,27 @@ discipline is.
 <ul class="timeline">
 
   <li>
-    <span class="role">Team Leader, Bare Metal System Core</span>
+    <span class="role">Team Leader, Bare Metal System Core (Undercloud)</span>
     <span class="org">— OVHcloud</span>
     <span class="dates">July 2022 — present · Rennes</span>
     <p>
-      I run a team of six engineers responsible for the server lifecycle
-      (provisioning, reallocation, decommissioning) behind OVHcloud Bare
-      Metal. I own the quarterly roadmap, the cross-team architecture
-      arbitrages, and the steering committee reporting. Recent focus:
-      self-encrypting drives rollout, an APIv2 surface for server
-      intervention status, and a deep investment in AI-assisted
-      engineering tooling.
+      I lead a team of six engineers (two technical leads, four senior
+      contributors) that owns the Undercloud orchestration layer behind
+      OVHcloud Bare Metal: the system that tracks every server through
+      its lifecycle (stock, reserved, connected, delivered, reallocated,
+      decommissioned) and exposes the customer-facing APIs through which
+      our cloud and enterprise customers see that state. The role spans
+      multi-chantier roadmap ownership (self-encrypting drives rollout,
+      server intervention status APIv2, dynamic server reallocation,
+      OS reinstall rationalisation, inventory synchronisation,
+      monitoring migration), cross-team architecture arbitrages with
+      neighbouring teams (Industry, Cloud API, hardware engineering,
+      data centre operations), and the steering committee reporting.
+      Underneath all of it I have invested heavily in AI-native
+      engineering tooling, including <code>a4m</code>: an internal CLI
+      that turned my reporting practice into structured Facts /
+      Insights / Recommendations, and shifted the team's weekly rituals
+      onto a single source of truth.
     </p>
   </li>
 

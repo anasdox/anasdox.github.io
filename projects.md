@@ -141,32 +141,89 @@ problem, what did the framing reveal, what was built.
 ## Engagements and companies
 
 <div class="project">
-  <h2>BM.SYS.CORE -- engineering team workbench</h2>
-  <p class="meta">OVHcloud · 2022 - present</p>
+  <h2>Bare Metal Undercloud -- engineering team leadership at OVHcloud</h2>
+  <p class="meta">OVHcloud · 2022 - present · Rennes</p>
   <p>
-    <strong>The problem.</strong> Our team owns a critical surface of
-    the Bare Metal platform. Predictability of delivery and early
-    detection of risk are the two outcomes the direction asks for, but
-    no tool in our stack expressed them. The data lived in Jira,
-    Confluence, Bitbucket and Webex, in four different shapes.
+    <strong>The scope.</strong> I lead a team of six engineers (two
+    technical leads, four senior contributors) responsible for the
+    Undercloud orchestration layer behind OVHcloud Bare Metal: the
+    system that turns racks of physical servers into allocatable
+    compute, tracks every server through its lifecycle (stock,
+    reserved, connected, delivered, reallocated, decommissioned), and
+    exposes the customer-facing APIs through which our cloud and
+    enterprise customers see that state. The team owns several
+    parallel chantiers at any time: self-encrypting drives rollout,
+    server intervention status communication, dynamic server
+    reallocation, OS reinstall rationalisation, server inventory
+    synchronisation, monitoring migration. Direction asks two outcomes
+    from us: predictability of delivery, and anticipation of delays.
   </p>
   <p>
-    <strong>What discovery revealed.</strong> Every weekly ritual
-    re-derived the same intermediate facts by hand. The drift between
-    sprints was visible but not named. The same words ("done",
-    "estimated", "blocked") meant subtly different things across
-    stakeholders, which is the classic ubiquitous language failure.
+    <strong>What framing kept revealing.</strong> Across every
+    chantier the bottleneck was rarely engineering speed. It was the
+    shared understanding across boundary teams. "Delivered" meant
+    something else to the Industry team than to ours. "Blocked" tickets
+    often were not blocked. The same word travelled through Industry,
+    Cloud API, hardware engineering and data centre ops, and quietly
+    drifted at every hand-off. Ubiquitous language failure at the
+    organisational seam. The standing rituals re-derived the same
+    intermediate facts every Monday by hand, and the slippage between
+    sprints showed up only once a sprint had been lost to it.
   </p>
   <p>
-    <strong>What was built.</strong> A single CLI (<code>a4m</code>)
-    that captures the team's ubiquitous language in code, computes
-    Facts, surfaces Insights as drift radars and forecasts, and
-    produces Recommendations ready to send. The same discipline is
-    applied to my own quarterly status reports for direction.
+    <strong>What I changed.</strong> Each chantier now starts as a
+    framing exercise: who are the actors, draw the flows end to end,
+    surface where the language breaks across teams, write the contract
+    that both sides will sign. The quarterly review pipeline runs on
+    weekly snapshots, structured drift radars and sprint-granular
+    P50/P90 forecasts per epic, and the status that goes to direction
+    fits on a single screen. Cross-team escalation has moved from
+    ad-hoc messages to traceable, Jira-anchored hand-offs that survive
+    a holiday week.
   </p>
   <p class="tags">
-    <span>Discovery</span><span>Ubiquitous language</span>
-    <span>Python</span><span>AI-assisted</span>
+    <span>Engineering leadership</span><span>Bare Metal</span>
+    <span>Undercloud</span><span>Cross-team framing</span>
+    <span>Ubiquitous language</span>
+  </p>
+</div>
+
+<div class="project">
+  <h2>a4m -- internal AI-native engineering workbench</h2>
+  <p class="meta">OVHcloud · Python (stdlib only) · 2025 - present</p>
+  <p>
+    <strong>The problem.</strong> Reporting and ritual work consumed
+    a disproportionate share of my week. The data needed to answer
+    "where is this team actually at" lived in four different systems
+    (Jira, Confluence, Bitbucket, Webex) in four different shapes,
+    and every Monday the same intermediate facts had to be re-derived
+    by hand before any meaningful conversation could happen.
+  </p>
+  <p>
+    <strong>The framing.</strong> The team's ubiquitous language
+    (epic, chantier, blocked, done, sprint-granular ETA, P50 / P90
+    forecast, drift) was already in active use. It just lived in
+    human memory and got re-interpreted on every report. If the
+    language was captured in code instead, every report would come
+    from the same source, and the discovery discipline (Facts,
+    Insights, Recommendations) could be the default shape of the
+    tool, not an extra step.
+  </p>
+  <p>
+    <strong>What was built.</strong> A standard-library Python CLI
+    that orchestrates the four services behind a single verb-driven
+    interface, captures the team's vocabulary in code, and emits
+    Facts (drift radars, capacity snapshots, hygiene audits,
+    sprint-granular forecasts), Insights (where exactly things are
+    slipping and why), and Recommendations ready to send. The
+    repository ships with an explicit <code>CLAUDE.md</code> so that
+    a Claude session reads the team's conventions in one pass and
+    becomes a first-class user, not a bolt-on. Every weekly delivery
+    ritual now runs through it.
+  </p>
+  <p class="tags">
+    <span>FIR</span><span>AI-native</span><span>Python</span>
+    <span>CLI design</span><span>Internal tooling</span>
   </p>
 </div>
 
