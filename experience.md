@@ -7,8 +7,10 @@ permalink: /experience/
 Nearly two decades through consulting, founding, and engineering
 leadership. The constant across every role has been the same
 discipline: framing the problem before designing the solution.
-See the [Method]({{ '/method/' | relative_url }}) for what that
-discipline is.
+See the [Method]({{ '/method/' | relative_url }}) for what the
+discipline is, and the
+[Projects]({{ '/projects/' | relative_url }}) page for the
+artifacts it produced.
 
 <ul class="timeline">
 
@@ -17,14 +19,9 @@ discipline is.
     <span class="org">at OVHcloud</span>
     <span class="dates">July 2022 - present · Rennes</span>
     <p>
-      I lead a team of six engineers (two technical leads, four senior
-      contributors) that owns the Undercloud orchestration layer behind
-      OVHcloud Bare Metal: the system that tracks every server from
-      stock to decommission and exposes the customer-facing APIs around
-      it. The role mixes multi-chantier roadmap, cross-team arbitrage,
-      and steering committee reporting, all running through a Facts /
-      Insights / Recommendations discipline I built into the team's
-      weekly cadence.
+      Lead a team of six engineers (two technical leads, four senior
+      contributors) behind Undercloud, the orchestration layer for
+      OVHcloud Bare Metal.
     </p>
   </li>
 
@@ -33,12 +30,9 @@ discipline is.
     <span class="org">at Placemeet</span>
     <span class="dates">March 2020 - July 2022</span>
     <p>
-      I co-founded Placemeet, a SaaS platform for online professional
-      events, and led the company end to end: software architecture,
-      MVP development, resilient and scalable cloud infrastructure,
-      CI/CD, hiring and managing the technical team, vendor negotiation,
-      and customer support. I shipped the product through the COVID
-      growth surge and into a sustainable team.
+      Co-founded a SaaS for online professional events. Ran the
+      company end to end through the COVID surge and into a
+      sustainable team.
     </p>
   </li>
 
@@ -47,11 +41,8 @@ discipline is.
     <span class="org">at ozzo.io</span>
     <span class="dates">January 2019 - December 2019</span>
     <p>
-      ozzo was a SaaS for algorithmic traders, inspired by evolutionary
-      biology: it turned static trading algorithms into programs that
-      adapted to changing market conditions. I designed the platform,
-      built partnerships with research labs, and animated the early
-      community of algo-traders.
+      Founded a SaaS that turned static trading algorithms into
+      evolutionary ones, with partnerships in academic labs.
     </p>
   </li>
 
@@ -61,9 +52,7 @@ discipline is.
     <span class="dates">August 2018 - January 2019</span>
     <p>
       Bootstrapped the engineering environment for a new tech team:
-      audited and refactored the legacy codebase, set up HDS-compliant
-      cloud infrastructure on GCP and VMware, built the CI/CD pipeline,
-      and helped the CTO with the first hires.
+      HDS-compliant GCP and VMware infrastructure, CI/CD, first hires.
     </p>
   </li>
 
@@ -72,14 +61,10 @@ discipline is.
     <span class="org">at Niji</span>
     <span class="dates">September 2014 - August 2018</span>
     <p>
-      Four years building the DevOps practice of a digital consultancy.
-      I led the internal DevOps team, ran Agile/DevOps transformations
-      for large French enterprises in banking, telecom and media, and
-      pitched around fifty pre-sales engagements that won those
-      mandates. I trained the next cohort of Solutions Architects on
-      the discovery-first method, and designed an internal orchestrator
-      that automated the software and infrastructure lifecycle across
-      client projects.
+      Built the DevOps consulting practice for large French
+      enterprises in banking, telecom and media. Around fifty
+      pre-sales engagements, and trained the next cohort of
+      Solutions Architects on the discovery-first method.
     </p>
   </li>
 
@@ -88,10 +73,10 @@ discipline is.
     <span class="org">at SII (Orange, Ouest-France, Envivio, France Telecom R&amp;D)</span>
     <span class="dates">2007 - 2014</span>
     <p>
-      Seven years building automation frameworks and web platforms for
+      Seven years on automation frameworks and web platforms for
       large French enterprises: MOOC platforms, R&amp;D portals,
-      Python-based data automation, and generic test-automation
-      frameworks deployed across France Telecom R&amp;D.
+      Python data automation, and a generic test-automation
+      framework deployed across France Telecom R&amp;D.
     </p>
   </li>
 
