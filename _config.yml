@@ -1,0 +1,45 @@
+# Jekyll config — GitHub Pages user site
+title: Anas Ameziane
+tagline: Engineering manager building with AI. Bridging people, code, and product.
+description: >-
+  Personal site of Anas Ameziane: engineering manager at OVHcloud,
+  former Solutions Architect and CEO, hands-on builder with Claude
+  and Python tooling.
+author: Anas Ameziane
+email: anas.ameziane@gmail.com
+url: "https://anasdox.github.io"
+baseurl: ""
+
+# Jekyll behaviour
+markdown: kramdown
+permalink: /:title/
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site-wide nav
+nav:
+  - title: About
+    url: /about/
+  - title: Experience
+    url: /experience/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
+
+# Social
+social:
+  linkedin: https://www.linkedin.com/in/anasameziane-199b5058
+  github: https://github.com/anasdox
+  email: anas.ameziane@gmail.com
+
+exclude:
+  - README.md
+  - .gitignore
+  - vendor
+  - Gemfile
+  - Gemfile.lock
