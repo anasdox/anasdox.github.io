@@ -14,32 +14,24 @@ discipline is.
 
   <li>
     <span class="role">Team Leader, Bare Metal System Core (Undercloud)</span>
-    <span class="org">— OVHcloud</span>
-    <span class="dates">July 2022 — present · Rennes</span>
+    <span class="org">at OVHcloud</span>
+    <span class="dates">July 2022 - present · Rennes</span>
     <p>
       I lead a team of six engineers (two technical leads, four senior
       contributors) that owns the Undercloud orchestration layer behind
-      OVHcloud Bare Metal: the system that tracks every server through
-      its lifecycle (stock, reserved, connected, delivered, reallocated,
-      decommissioned) and exposes the customer-facing APIs through which
-      our cloud and enterprise customers see that state. The role spans
-      multi-chantier roadmap ownership (self-encrypting drives rollout,
-      server intervention status APIv2, dynamic server reallocation,
-      OS reinstall rationalisation, inventory synchronisation,
-      monitoring migration), cross-team architecture arbitrages with
-      neighbouring teams (Industry, Cloud API, hardware engineering,
-      data centre operations), and the steering committee reporting.
-      Underneath all of it I have invested heavily in AI-native
-      engineering tooling, turning my reporting practice into
-      structured Facts / Insights / Recommendations and shifting the
-      team's weekly rituals onto a single source of truth.
+      OVHcloud Bare Metal: the system that tracks every server from
+      stock to decommission and exposes the customer-facing APIs around
+      it. The role mixes multi-chantier roadmap, cross-team arbitrage,
+      and steering committee reporting, all running through a Facts /
+      Insights / Recommendations discipline I built into the team's
+      weekly cadence.
     </p>
   </li>
 
   <li>
     <span class="role">Co-founder &amp; CEO</span>
-    <span class="org">— Placemeet</span>
-    <span class="dates">March 2020 — July 2022</span>
+    <span class="org">at Placemeet</span>
+    <span class="dates">March 2020 - July 2022</span>
     <p>
       I co-founded Placemeet, a SaaS platform for online professional
       events, and led the company end to end: software architecture,
@@ -52,8 +44,8 @@ discipline is.
 
   <li>
     <span class="role">Founder</span>
-    <span class="org">— ozzo.io</span>
-    <span class="dates">January 2019 — December 2019</span>
+    <span class="org">at ozzo.io</span>
+    <span class="dates">January 2019 - December 2019</span>
     <p>
       ozzo was a SaaS for algorithmic traders, inspired by evolutionary
       biology: it turned static trading algorithms into programs that
@@ -65,8 +57,8 @@ discipline is.
 
   <li>
     <span class="role">Solutions Architect / DevOps</span>
-    <span class="org">— Follow</span>
-    <span class="dates">August 2018 — January 2019</span>
+    <span class="org">at Follow</span>
+    <span class="dates">August 2018 - January 2019</span>
     <p>
       Bootstrapped the engineering environment for a new tech team:
       audited and refactored the legacy codebase, set up HDS-compliant
@@ -77,8 +69,8 @@ discipline is.
 
   <li>
     <span class="role">Solutions Architect / DevOps / VP of Engineering</span>
-    <span class="org">— Niji</span>
-    <span class="dates">September 2014 — August 2018</span>
+    <span class="org">at Niji</span>
+    <span class="dates">September 2014 - August 2018</span>
     <p>
       Four years building the DevOps practice of a digital consultancy.
       I led the internal DevOps team, ran Agile/DevOps transformations
@@ -92,8 +84,8 @@ discipline is.
 
   <li>
     <span class="role">Lead Developer &amp; Automation Engineer</span>
-    <span class="org">— SII (Orange, Ouest-France, Envivio, France Telecom R&amp;D)</span>
-    <span class="dates">2007 — 2014</span>
+    <span class="org">at SII (Orange, Ouest-France, Envivio, France Telecom R&amp;D)</span>
+    <span class="dates">2007 - 2014</span>
     <p>
       Seven years building automation frameworks and web platforms for
       large French enterprises: MOOC platforms, R&amp;D portals,
