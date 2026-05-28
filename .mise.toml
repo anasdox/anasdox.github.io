@@ -1,0 +1,27 @@
+# mise config — anasdox.github.io
+# Run `mise install` once, then `mise run serve` to preview.
+
+[tools]
+ruby = "3.3"
+
+[env]
+# Keep bundler installs local to the repo, avoid touching system gems
+BUNDLE_PATH = "vendor/bundle"
+
+[tasks.install]
+description = "Install Ruby gems via bundler"
+run = "bundle install"
+
+[tasks.serve]
+description = "Serve the Jekyll site locally on http://localhost:4000"
+depends = ["install"]
+run = "bundle exec jekyll serve --livereload"
+
+[tasks.build]
+description = "Build the site into _site/ (mirrors what GitHub Pages does)"
+depends = ["install"]
+run = "bundle exec jekyll build"
+
+[tasks.clean]
+description = "Remove generated _site and caches"
+run = "rm -rf _site .jekyll-cache .jekyll-metadata"

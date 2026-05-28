@@ -8,6 +8,10 @@ vendor/
 # Ruby bundler
 .bundle/
 Gemfile.lock
+vendor/
+
+# mise local state
+.mise.local.toml
 
 # OS
 .DS_Store
