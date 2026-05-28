@@ -228,9 +228,17 @@ problem, what did the framing reveal, what was built.
     orchestrator we shipped automated the lifecycle, but it was
     always the spec that closed the engagement.
   </p>
+  <p>
+    Four years, around fifty pre-sales engagements for large French
+    enterprises, and the next cohort of Solutions Architects trained
+    on the same discipline. The feedback clients sent back was always
+    about two things: the willingness to challenge the problem they
+    thought they were buying, and the time spent with the people who
+    would have to live with the answer.
+  </p>
   <p class="tags">
     <span>Pre-sales</span><span>Consulting</span><span>FIR</span>
-    <span>Orchestrator</span>
+    <span>Training</span><span>Orchestrator</span>
   </p>
 </div>
 

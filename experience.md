@@ -74,11 +74,12 @@ discipline is.
     <p>
       Four years building the DevOps practice of a digital consultancy.
       I led the internal DevOps team, ran Agile/DevOps transformations
-      for several enterprise clients, did the pre-sales pitches that
-      won those engagements, and trained architects and operations
-      teams. I designed and built an internal orchestrator that
-      automated the full software and infrastructure lifecycle, used
-      across multiple client projects.
+      for large French enterprises in banking, telecom and media, and
+      pitched around fifty pre-sales engagements that won those
+      mandates. I trained the next cohort of Solutions Architects on
+      the discovery-first method, and designed an internal orchestrator
+      that automated the software and infrastructure lifecycle across
+      client projects.
     </p>
   </li>
 
