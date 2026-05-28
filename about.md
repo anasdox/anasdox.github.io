@@ -16,7 +16,12 @@ The lenses have shifted over time:
   running DevOps and Agile transformations for enterprise clients in
   banking, telecom and media. I spent more time in conference rooms
   than in editors, listening to people describe their work and
-  helping engineering teams hear what was actually being said.
+  helping engineering teams hear what was actually being said. The
+  toolkit I built there is the one on the
+  [Method]({{ '/method/' | relative_url }}) page: structured
+  interviews, FIR write-ups, Design Sprints when the room needed to
+  converge, and systemic analysis on the transformation projects
+  whose technical scope was masking a structural cause.
 - For two years at Placemeet I was a **founder and CEO**. The shift
   was brutal: now I was the stakeholder being interviewed. It
   sharpened the discipline. You learn quickly which questions you

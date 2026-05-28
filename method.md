@@ -95,7 +95,69 @@ and Insights underneath them are solid.
 The discipline is to **never skip a layer**. Recommendations without
 Insights are opinions. Insights without Facts are guesses.
 
-## 3. Ubiquitous language as the test
+## 3. Design Sprint as collective framing
+
+The interview-and-FIR pipeline is built for one-to-one listening.
+There are moments when it is the wrong tool: when ten stakeholders
+hold ten mental models of the same problem, when the calendar will
+not survive fifteen sequential discovery sessions, when the decision
+is political enough that no one will commit privately to what they
+would commit to publicly.
+
+For those moments I run a Design Sprint. The original five-day
+structure (Map, Sketch, Decide, Prototype, Test) is the one I have
+used most often with clients, adapted to whatever constraints the
+engagement allowed.
+
+The output that matters is rarely the prototype. The prototype is a
+forcing function: it makes the room commit to a single shared
+articulation of the problem, because you cannot prototype an
+ambiguity. By the middle of the week, the room knows what the problem
+is in a way that no preceding workshop had produced. The user-test
+session at the end is then a discipline of confronting that shared
+understanding with real users, and discovering which parts of it the
+users did not, in fact, share.
+
+I have facilitated sprints of this kind for several clients across
+different industries. The ones that worked best are those where the
+sponsor accepted, in advance, that the answer might be: *"the problem
+you brought us is not the one we found."* That up-front commitment is
+harder than the five days.
+
+## 4. Systemic analysis when the problem is the system
+
+Some problems do not survive a one-shot framing exercise, no matter
+how good the interview was. The bug keeps coming back. The team keeps
+burning out. The customer keeps churning. Every individual fix works
+in isolation, and the aggregate gets worse.
+
+When that pattern shows up, the unit of analysis is not the feature.
+It is the system: the actors, the flows between them, the stocks that
+accumulate or deplete, and the feedback loops that reinforce or
+balance them. The vocabulary comes from systems thinking
+(Senge, Meadows, Forrester), and the diagnostic question is the one
+Donella Meadows made famous: *where are the leverage points*.
+
+I have led transformation engagements where the technical scope was
+visible but the structural cause was not. The recurring pattern was
+the same: the team had been optimising at a low-leverage point (a new
+tool, a new process, a new ceremony) for years, and the structure of
+the incentives upstream made each optimisation cancel out within a
+quarter.
+
+Systemic analysis is the same listening discipline as the interview,
+applied to a different object. You ask the same kinds of questions,
+you write Facts before Insights, but the Facts are about flows and
+loops instead of features, and the Insights are about the structure
+that produces the symptoms. The recommendations are then about where
+in the structure to push, not which symptom to suppress.
+
+Without this lens, transformation engagements default to renaming
+problems instead of resolving them. With it, the engagement gets much
+smaller in scope and much more uncomfortable in conclusion, which I
+think is the right shape.
+
+## 5. Ubiquitous language as the test
 
 When the team and the business can argue about a feature using the
 same words, you have understood the problem. When the engineers
@@ -117,7 +179,7 @@ I treat it as a forcing function. If the team cannot find a single
 word for a concept, the concept is not yet stable. Until it is, no
 schema, no API, no migration.
 
-## 4. Executable specification (BDD)
+## 6. Executable specification (BDD)
 
 Behavior-Driven Development is not a testing framework. It is a
 discovery technique that happens to produce tests.
@@ -144,7 +206,7 @@ The artifact is reviewable by the business and executable by the
 engineers. It outlives the meeting. It survives the team rotation.
 It is the single best functional specification I have ever shipped.
 
-## 5. The functional specification as a contract
+## 7. The functional specification as a contract
 
 Everything above produces one tangible deliverable: a functional
 specification that holds the shared understanding. It contains the
