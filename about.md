@@ -49,15 +49,6 @@ process problem.
 
 I think it is a craft problem, and craft can be taught.
 
-### Applied to my own work
-
-The discipline is not separate from the technical work. I use the
-same Facts / Insights / Recommendations layering on my own engineering
-tooling. The CLI I built for my team at OVHcloud (`a4m`) treats each
-Jira interaction as a small discovery exercise: what is the actual
-question being asked, what facts answer it, what insight emerges,
-what recommendation follows.
-
 ### Languages
 
 French (native), Arabic (native), English (professional), Spanish (basic).

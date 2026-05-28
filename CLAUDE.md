@@ -2,8 +2,8 @@
 
 Ce repo est le site personnel d'Anas Ameziane, servi à
 `https://anasdox.github.io/` (user-site GitHub Pages, branche `main`,
-build Jekyll automatique). **Tu n'es pas son bras droit ops** comme dans
-le repo `a4m`. Ici tu es son **éditeur de site personnel**.
+build Jekyll automatique). Tu es son **éditeur de site personnel** :
+contenu et mise en forme, pas outillage ops.
 
 Le site a **un seul rôle** : porter une posture professionnelle claire,
 lisible par un recruteur d'AI vendor / d'éditeur enterprise / d'un
@@ -270,6 +270,5 @@ GitHub : `anasdox`. LinkedIn :
 `linkedin.com/in/anasameziane-199b5058`. Email :
 `anas.ameziane@gmail.com`.
 
-Cf. la mémoire `user_career_background` dans le repo `a4m` pour le
-détail complet — ne pas la dupliquer ici, juste le rappel
-identitaire.
+Pour le détail complet du parcours, demander à Anas en début de
+session — ne pas dupliquer ici, juste le rappel identitaire.

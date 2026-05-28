@@ -30,10 +30,9 @@ discipline is.
       neighbouring teams (Industry, Cloud API, hardware engineering,
       data centre operations), and the steering committee reporting.
       Underneath all of it I have invested heavily in AI-native
-      engineering tooling, including <code>a4m</code>: an internal CLI
-      that turned my reporting practice into structured Facts /
-      Insights / Recommendations, and shifted the team's weekly rituals
-      onto a single source of truth.
+      engineering tooling, turning my reporting practice into
+      structured Facts / Insights / Recommendations and shifting the
+      team's weekly rituals onto a single source of truth.
     </p>
   </li>
 

@@ -189,45 +189,6 @@ problem, what did the framing reveal, what was built.
 </div>
 
 <div class="project">
-  <h2>a4m -- internal AI-native engineering workbench</h2>
-  <p class="meta">OVHcloud · Python (stdlib only) · 2025 - present</p>
-  <p>
-    <strong>The problem.</strong> Reporting and ritual work consumed
-    a disproportionate share of my week. The data needed to answer
-    "where is this team actually at" lived in four different systems
-    (Jira, Confluence, Bitbucket, Webex) in four different shapes,
-    and every Monday the same intermediate facts had to be re-derived
-    by hand before any meaningful conversation could happen.
-  </p>
-  <p>
-    <strong>The framing.</strong> The team's ubiquitous language
-    (epic, chantier, blocked, done, sprint-granular ETA, P50 / P90
-    forecast, drift) was already in active use. It just lived in
-    human memory and got re-interpreted on every report. If the
-    language was captured in code instead, every report would come
-    from the same source, and the discovery discipline (Facts,
-    Insights, Recommendations) could be the default shape of the
-    tool, not an extra step.
-  </p>
-  <p>
-    <strong>What was built.</strong> A standard-library Python CLI
-    that orchestrates the four services behind a single verb-driven
-    interface, captures the team's vocabulary in code, and emits
-    Facts (drift radars, capacity snapshots, hygiene audits,
-    sprint-granular forecasts), Insights (where exactly things are
-    slipping and why), and Recommendations ready to send. The
-    repository ships with an explicit <code>CLAUDE.md</code> so that
-    a Claude session reads the team's conventions in one pass and
-    becomes a first-class user, not a bolt-on. Every weekly delivery
-    ritual now runs through it.
-  </p>
-  <p class="tags">
-    <span>FIR</span><span>AI-native</span><span>Python</span>
-    <span>CLI design</span><span>Internal tooling</span>
-  </p>
-</div>
-
-<div class="project">
   <h2>Placemeet -- SaaS for online professional events</h2>
   <p class="meta">Co-founder &amp; CEO · 2020 - 2022</p>
   <p>
