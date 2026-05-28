@@ -26,11 +26,11 @@ The lenses have shifted over time:
   was brutal: now I was the stakeholder being interviewed. It
   sharpened the discipline. You learn quickly which questions you
   resent being asked, and you stop asking them yourself.
-- For the last three years at OVHcloud I have been **engineering
-  manager** of a team that owns a critical piece of our Bare Metal
-  platform. The stakeholders are internal now (product, direction,
-  neighbouring teams), but the work is the same: extract what they
-  actually need, frame it in language the team can build against.
+- For the last three years at OVHcloud I have **led the team** that
+  owns a critical piece of our Bare Metal platform. The stakeholders
+  are internal now (product, direction, neighbouring teams), but the
+  work is the same: extract what they actually need, frame it in
+  language the team can build against.
 
 ### What I believe
 
@@ -49,15 +49,14 @@ process problem.
 
 I think it is a craft problem, and craft can be taught.
 
-### What I do hands-on
+### Applied to my own work
 
-The methodology is not separate from the technical work. I use the
-same discipline on my own tooling. The CLI I built for my team at
-OVHcloud (`a4m`) treats every Jira interaction as a small discovery
-exercise: what is the actual question being asked, what facts answer
-it, what insight emerges, what recommendation follows. Large language
-models, used carefully, are useful collaborators in this kind of
-structured listening, and I work in the open about how.
+The discipline is not separate from the technical work. I use the
+same Facts / Insights / Recommendations layering on my own engineering
+tooling. The CLI I built for my team at OVHcloud (`a4m`) treats each
+Jira interaction as a small discovery exercise: what is the actual
+question being asked, what facts answer it, what insight emerges,
+what recommendation follows.
 
 ### Languages
 

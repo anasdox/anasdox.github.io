@@ -68,22 +68,15 @@ problem, what did discovery reveal, what was built.
   <h2>DevOps transformations at Niji</h2>
   <p class="meta">Solutions Architect / VP of Engineering · 2014 - 2018</p>
   <p>
-    <strong>The problem.</strong> Enterprise clients in banking,
-    telecom and media all wanted "DevOps". The word meant a different
-    thing in each conversation.
-  </p>
-  <p>
-    <strong>What discovery revealed.</strong> The pain was never the
-    pipeline. It was the handoff between the team that wrote the code
-    and the team that ran it, encoded in a contract neither side had
-    actually read. The pipeline was a symptom.
-  </p>
-  <p>
-    <strong>What was built.</strong> An internal orchestrator that
-    automated the full software and infrastructure lifecycle, deployed
-    across several clients. More importantly, a discovery-first
-    consulting practice that started every engagement with structured
-    interviews, FIR write-ups and a shared functional specification.
+    Enterprise clients in banking, telecom and media all wanted
+    "DevOps", and meant different things by it. The pain was never
+    the pipeline. It was the handoff between the team that wrote the
+    code and the team that ran it, encoded in a contract neither side
+    had actually read. I built a discovery-first consulting practice
+    that started every engagement with structured interviews, FIR
+    write-ups and a shared functional specification. The internal
+    orchestrator we shipped automated the lifecycle, but it was
+    always the spec that closed the engagement.
   </p>
   <p class="tags">
     <span>Pre-sales</span><span>Consulting</span><span>FIR</span>
@@ -92,24 +85,15 @@ problem, what did discovery reveal, what was built.
 </div>
 
 <div class="project">
-  <h2>ozzo.io — evolutionary algo-trading platform</h2>
+  <h2>ozzo.io -- evolutionary algo-trading platform</h2>
   <p class="meta">Founder · 2019</p>
   <p>
-    <strong>The problem.</strong> Algorithmic traders shipped strategies
-    that worked until market conditions changed, then silently bled
-    money. The fix in most tools was to manually re-tune the strategy.
-  </p>
-  <p>
-    <strong>What discovery revealed.</strong> Traders did not want
-    automation of the re-tuning. They wanted to understand <em>which</em>
-    market conditions their strategies were silently betting on.
-  </p>
-  <p>
-    <strong>What was built.</strong> A SaaS that turned static
-    strategies into evolutionary ones that adapted to changing market
+    Algo traders did not want automated re-tuning of their strategies.
+    They wanted to understand <em>which</em> market conditions each
+    strategy was silently betting on. The product I built turned
+    static strategies into evolutionary ones that adapted to changing
     regimes, with explicit visibility into which regime each variant
-    was tuned for. Partnerships with academic labs in evolutionary
-    computation.
+    was tuned for.
   </p>
   <p class="tags">
     <span>FinTech</span><span>Evolutionary computing</span>

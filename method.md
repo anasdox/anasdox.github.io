@@ -225,11 +225,11 @@ like. It is editable, versioned, and reviewed like code.
 
 ## How I use this in practice
 
-Most of my engagements start the same way. I sit with three or four
-stakeholders, in separate sessions, and ask them to walk me through
-their work. I listen for the words they use, the moments they
-hesitate, the workarounds they apologise for. I take notes in the
-Facts layer only.
+A framing engagement, when I run one, has the same shape. I sit with
+three or four stakeholders, in separate sessions, and ask them to
+walk me through their work. I listen for the words they use, the
+moments they hesitate, the workarounds they apologise for. I take
+notes in the Facts layer only.
 
 Between sessions, I write the Insights. Patterns surface. Two
 stakeholders use the same word for different things, or different
