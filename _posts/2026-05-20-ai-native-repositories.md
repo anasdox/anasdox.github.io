@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On AI-native repositories"
-date: 2026-05-28
+date: 2026-05-20
 ---
 
 Most engineers I talk to about AI coding assistants describe the same

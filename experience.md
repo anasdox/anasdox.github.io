@@ -4,6 +4,12 @@ title: Experience
 permalink: /experience/
 ---
 
+A fifteen-year arc through consulting, founding, and engineering
+leadership. The constant across every role has been the same
+discipline: framing the problem before designing the solution.
+See the [Method]({{ '/method/' | relative_url }}) for what that
+discipline is.
+
 <ul class="timeline">
 
   <li>

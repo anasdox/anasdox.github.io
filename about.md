@@ -4,35 +4,55 @@ title: About
 permalink: /about/
 ---
 
-I am an engineering manager and Solutions Architect based in Brittany,
-France. My career has moved back and forth between three lenses on the
-same problem: how do you actually ship software at scale.
+I am a Solutions Architect and engineering manager based in Brittany,
+France. The thread that runs through every role I have held is the
+same one: I am a **translator between business and engineering**, and
+the discipline I have built is the one described on the
+[Method]({{ '/method/' | relative_url }}) page.
 
-- As an **architect and DevOps lead**, I helped CTOs in banking,
-  telecom and media build the infrastructure and the team practices
-  that let their engineers ship without fear.
-- As a **founder and CEO**, I built a SaaS product end to end, from
-  the architecture sketch to the customer support inbox.
-- As an **engineering manager** at OVHcloud, I run a team of six
-  responsible for a critical surface of our Bare Metal platform.
+The lenses have shifted over time:
 
-What ties it together is empathy. Most engineering problems at scale
-are really translation problems: between developers and operators,
-between product and platform, between vendor and customer. I have
-spent the last fifteen years learning to be a good translator, and I
-build the tools that let translation happen faster.
+- For four years at Niji I was an external **Solutions Architect**,
+  running DevOps and Agile transformations for enterprise clients in
+  banking, telecom and media. I spent more time in conference rooms
+  than in editors, listening to people describe their work and
+  helping engineering teams hear what was actually being said.
+- For two years at Placemeet I was a **founder and CEO**. The shift
+  was brutal: now I was the stakeholder being interviewed. It
+  sharpened the discipline. You learn quickly which questions you
+  resent being asked, and you stop asking them yourself.
+- For the last three years at OVHcloud I have been **engineering
+  manager** of a team that owns a critical piece of our Bare Metal
+  platform. The stakeholders are internal now (product, direction,
+  neighbouring teams), but the work is the same: extract what they
+  actually need, frame it in language the team can build against.
 
-### How I work today
+### What I believe
 
-I am deeply hands-on with large language models. I run my own
-internal tooling, written in standard-library Python, that orchestrates
-Jira, Confluence, Bitbucket and Webex into a single CLI driven by
-Claude. The same workflow lets me review pull requests, draft
-stakeholder communications, and prepare quarterly reports without ever
-copy-pasting between tools. I treat my repositories as
-**AI-native by default**: every project ships with a `CLAUDE.md`,
-explicit conventions, and prompt-shaped documentation, so any
-contributor (human or agent) can be productive in minutes.
+Software engineering culture has spent the last decade rewarding
+people who ship fast. That has been mostly good, but the side effect
+is a generation of engineers who have been taught to compress the
+discovery phase to zero. The cost of that compression is invisible
+until production, and then it is unrecoverable.
+
+The skill the industry under-trains is **the unbiased interview**.
+Most engineers I work with have never been taught how to ask a
+question that does not contain its own answer, and they have not been
+trained to listen in the layers of Facts, Insights and
+Recommendations. So they ship the wrong thing on time, and call it a
+process problem.
+
+I think it is a craft problem, and craft can be taught.
+
+### What I do hands-on
+
+The methodology is not separate from the technical work. I use the
+same discipline on my own tooling. The CLI I built for my team at
+OVHcloud (`a4m`) treats every Jira interaction as a small discovery
+exercise: what is the actual question being asked, what facts answer
+it, what insight emerges, what recommendation follows. Large language
+models, used carefully, are useful collaborators in this kind of
+structured listening, and I work in the open about how.
 
 ### Languages
 
@@ -46,4 +66,4 @@ Google Cloud Platform: Core Infrastructure (certified).
 ### Location
 
 Cesson-Sévigné, Brittany. Available across France and Europe for
-client work and on-site visits.
+client visits, workshops and on-site discovery sessions.

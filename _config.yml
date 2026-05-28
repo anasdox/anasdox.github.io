@@ -1,10 +1,11 @@
 # Jekyll config — GitHub Pages user site
 title: Anas Ameziane
-tagline: Engineering manager building with AI. Bridging people, code, and product.
+tagline: I help engineering teams spend more time framing the problem than building the solution.
 description: >-
-  Personal site of Anas Ameziane: engineering manager at OVHcloud,
-  former Solutions Architect and CEO, hands-on builder with Claude
-  and Python tooling.
+  Personal site of Anas Ameziane. Problem framing for software teams:
+  the art of the unbiased interview, the FIR methodology
+  (Facts, Insights, Recommendations), ubiquitous language and
+  executable specifications.
 author: Anas Ameziane
 email: anas.ameziane@gmail.com
 url: "https://anasdox.github.io"
@@ -20,6 +21,8 @@ plugins:
 
 # Site-wide nav
 nav:
+  - title: Method
+    url: /method/
   - title: About
     url: /about/
   - title: Experience
