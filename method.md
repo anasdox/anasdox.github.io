@@ -116,6 +116,13 @@ structure (Map, Sketch, Decide, Prototype, Test) is the one I have
 used most often with clients, adapted to whatever constraints the
 engagement allowed.
 
+{::nomarkdown}
+<div class="mermaid">
+flowchart LR
+  Map["Day 1: Map"] --> Sketch["Day 2: Sketch"] --> Decide["Day 3: Decide"] --> Proto["Day 4: Prototype"] --> Test["Day 5: Test"]
+</div>
+{:/nomarkdown}
+
 The output that matters is rarely the prototype. The prototype is a
 forcing function: it makes the room commit to a single shared
 articulation of the problem, because you cannot prototype an
@@ -151,6 +158,17 @@ the same: the team had been optimising at a low-leverage point (a new
 tool, a new process, a new ceremony) for years, and the structure of
 the incentives upstream made each optimisation cancel out within a
 quarter.
+
+{::nomarkdown}
+<div class="mermaid">
+flowchart LR
+  Struct["Structure (incentives, flows)"] --> Loop["Feedback loop"] --> Sym["Symptom (what hurts)"]
+</div>
+{:/nomarkdown}
+
+Reading right to left is where leverage hides: the symptom is loud
+but cheap to push on, the structure is quiet but the only place a
+push compounds.
 
 Systemic analysis is the same listening discipline as the interview,
 applied to a different object. You ask the same kinds of questions,
