@@ -83,7 +83,9 @@ quelque chose qui sous-entend une dispo bureau régulière.
   automatique.
 - **Thème custom maison**, pas de dépendance theme. `theme: null` dans
   `_config.yml`. CSS écrit à la main dans `assets/css/style.css`
-  (~150 lignes). Pas de Tailwind, pas de framework, pas de JS.
+  (~150 lignes). Pas de Tailwind, pas de framework, pas de JS **sauf
+  Mermaid via CDN** dans `_layouts/default.html` pour rendre les
+  diagrammes côté client (un seul script, pas de bundler).
 - **`jekyll-feed`** + **`jekyll-seo-tag`** comme plugins (whitelisted
   par GH Pages, pas de config supplémentaire).
 - **Preview locale** : Ruby + bundler. `bundle install` puis
@@ -159,6 +161,7 @@ README.md                # explication du repo (pas le contenu)
 | Tweak visuel (couleur, marges, typo) | `assets/css/style.css` uniquement. Variables CSS en haut du fichier dans `:root {}` |
 | Tweak du header / footer | `_includes/header.html` ou `_includes/footer.html` |
 | Tweak du squelette HTML global | `_layouts/default.html`. À éviter sauf vraie nécessité. |
+| Ajouter un diagramme | `<div class="mermaid">...</div>` wrappé dans `{::nomarkdown}` ... `{:/nomarkdown}` (sinon kramdown escape les `-->`). Script CDN dans `_layouts/default.html`. Préférer `flowchart LR` pour pipelines, `flowchart TD` pour boucles. 3-8 nœuds max. |
 
 # Format des blog posts
 
@@ -212,7 +215,9 @@ et sert à la racine. Délai typique : 30-90s. Pas d'Action à configurer.
 - **Ajouter du JS, un framework JS, un bundler.** Le site est
   intentionnellement zéro-JS pour la perf et la longévité. Si une
   feature semble nécessiter du JS, c'est qu'elle est trop complexe
-  pour ce site.
+  pour ce site. **Exception explicite : Mermaid via CDN** pour les
+  diagrammes (un seul script, pas de bundler, pas de framework). Pas
+  d'autre exception sans demander.
 - **Ajouter Tailwind ou un framework CSS.** Le CSS hand-written est
   un signal volontaire (sobriété, contrôle). Le remplacer = perdre
   ce signal.

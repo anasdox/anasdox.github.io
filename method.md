@@ -61,6 +61,13 @@ After the interview comes the trap: the urge to immediately propose a
 solution. The protection against the trap is to write down what you
 heard, in three separate layers, with no skipping.
 
+{::nomarkdown}
+<div class="mermaid">
+flowchart LR
+  F["Facts (observable)"] --> I["Insights (interpretive)"] --> R["Recommendations (actionable)"]
+</div>
+{:/nomarkdown}
+
 ### Facts
 
 What was actually said or observed, in the speaker's own words. No

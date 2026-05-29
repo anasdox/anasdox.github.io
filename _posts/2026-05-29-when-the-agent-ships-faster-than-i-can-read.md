@@ -86,6 +86,21 @@ makes the tests pass. I review the result against the scenarios, not
 against the line diff. The agent demonstrates the running behavior.
 I sign off, or I refine the scenarios and we run another round.
 
+{::nomarkdown}
+<div class="mermaid">
+flowchart TD
+  Start(["Feature description, 3 to 10 scenarios"]) --> Scaffold["Agent: test scaffolding"]
+  Scaffold --> ReviewSpec{"Human review: tests match scenarios?"}
+  ReviewSpec -- no --> Start
+  ReviewSpec -- yes --> Implement["Agent: production code"]
+  Implement --> Run["Agent: runs tests, iterates"]
+  Run --> Demo["Agent: demonstrates behavior"]
+  Demo --> Validate{"Human: behavior correct?"}
+  Validate -- no --> Start
+  Validate -- yes --> Done(["Sign off"])
+</div>
+{:/nomarkdown}
+
 What I am doing in that loop is the same thing I have always done as
 an engineer: deciding what "correct" means for this software, in
 language a stakeholder could read. What changed is that I stopped
