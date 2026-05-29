@@ -4,10 +4,10 @@ title: Projects
 permalink: /projects/
 ---
 
-Tools I have built in the open, and engagements I have run.
-Both told through the same lens as the
-[Method]({{ '/method/' | relative_url }}): what was the actual
-problem, what did the framing reveal, what was built.
+What I build in the open outside of the day job: tools that codify
+the [Method]({{ '/method/' | relative_url }}), and the music I make
+on the side. For the engagements I have run, see
+[Experience]({{ '/experience/' | relative_url }}).
 
 ## Open-source
 
@@ -138,117 +138,15 @@ problem, what did the framing reveal, what was built.
   </p>
 </div>
 
-## Engagements and companies
+## Music
 
 <div class="project">
-  <h2>Bare Metal Undercloud -- engineering team leadership at OVHcloud</h2>
-  <p class="meta">OVHcloud · 2022 - present · Rennes</p>
+  <h2><a href="https://www.twitch.tv/ramas_music">ramas_music</a> -- live music on Twitch</h2>
+  <p class="meta">Twitch · live</p>
   <p>
-    <strong>The scope.</strong> I lead a team of six engineers (two
-    technical leads, four senior contributors) responsible for the
-    Undercloud orchestration layer behind OVHcloud Bare Metal: the
-    system that turns racks of physical servers into allocatable
-    compute, with several parallel chantiers in flight at any time.
-    Direction asks two outcomes from us: predictability of delivery,
-    and anticipation of delays.
-  </p>
-  <p>
-    <strong>What framing kept revealing.</strong> Across every
-    chantier the bottleneck was rarely engineering speed. It was the
-    shared understanding across boundary teams. The same word
-    travelled through the value chain and quietly drifted at every
-    hand-off. Ubiquitous language failure at the organisational seam.
-  </p>
-  <p>
-    <strong>FIR became the team's cadence.</strong> Facts, Insights
-    and Recommendations as the operating shape of every status loop.
-    Weekly snapshots collect the Facts. Drift radars and
-    sprint-granular P50/P90 forecasts per epic surface the Insights.
-    The status that goes to direction is one screen of named
-    Recommendations.
-  </p>
-  <p>
-    <strong>BDD became the contract.</strong> Each new chantier
-    starts as an executable scenario the business signs off and the
-    engineers run. That scenario is also the trace: cross-team
-    escalation moved from ad-hoc messages to Jira-anchored hand-offs
-    that survive a holiday week, because the contract is legible to
-    whoever picks it up next.
+    Where I play music outside of work.
   </p>
   <p class="tags">
-    <span>FIR</span><span>BDD</span>
-    <span>Ubiquitous language</span><span>Bare Metal</span>
-    <span>Undercloud</span>
-  </p>
-</div>
-
-<div class="project">
-  <h2>Placemeet -- SaaS for online professional events</h2>
-  <p class="meta">Co-founder &amp; CEO · 2020 - 2022</p>
-  <p>
-    <strong>The problem.</strong> Professional event organisers needed
-    an online tool that respected the social mechanics of a real event,
-    not a video grid. The market shipped video grids.
-  </p>
-  <p>
-    <strong>What discovery revealed.</strong> The complaints were not
-    about the tools. They were about the loss of incidental
-    interaction (the hallway, the coffee, the "do you have a minute").
-    Building a video platform would not have addressed any of that.
-  </p>
-  <p>
-    <strong>What was built.</strong> A SaaS platform whose architecture
-    centred on those interactions rather than on broadcast quality.
-    I shipped the product end to end through the COVID demand surge,
-    hired the engineering team, and built the operations underneath.
-  </p>
-  <p class="tags">
-    <span>Customer discovery</span><span>SaaS</span><span>Architecture</span>
-    <span>CEO</span>
-  </p>
-</div>
-
-<div class="project">
-  <h2>DevOps transformations at Niji</h2>
-  <p class="meta">Solutions Architect / VP of Engineering · 2014 - 2018</p>
-  <p>
-    Enterprise clients in banking, telecom and media all wanted
-    "DevOps", and meant different things by it. The pain was never
-    the pipeline. It was the handoff between the team that wrote the
-    code and the team that ran it, encoded in a contract neither side
-    had actually read. I built a discovery-first consulting practice
-    that started every engagement with structured interviews, FIR
-    write-ups and a shared functional specification. The internal
-    orchestrator we shipped automated the lifecycle, but it was
-    always the spec that closed the engagement.
-  </p>
-  <p>
-    Four years, around fifty pre-sales engagements for large French
-    enterprises, and the next cohort of Solutions Architects trained
-    on the same discipline. The feedback clients sent back was always
-    about two things: the willingness to challenge the problem they
-    thought they were buying, and the time spent with the people who
-    would have to live with the answer.
-  </p>
-  <p class="tags">
-    <span>Pre-sales</span><span>Consulting</span><span>FIR</span>
-    <span>Training</span><span>Orchestrator</span>
-  </p>
-</div>
-
-<div class="project">
-  <h2>ozzo.io -- evolutionary algo-trading platform</h2>
-  <p class="meta">Founder · 2019</p>
-  <p>
-    Algo traders did not want automated re-tuning of their strategies.
-    They wanted to understand <em>which</em> market conditions each
-    strategy was silently betting on. The product I built turned
-    static strategies into evolutionary ones that adapted to changing
-    regimes, with explicit visibility into which regime each variant
-    was tuned for.
-  </p>
-  <p class="tags">
-    <span>FinTech</span><span>Evolutionary computing</span>
-    <span>Founder</span>
+    <span>Music</span><span>Live</span>
   </p>
 </div>
