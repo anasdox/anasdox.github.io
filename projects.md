@@ -144,9 +144,11 @@ on the side. For the engagements I have run, see
   <h2><a href="https://www.twitch.tv/ramas_music">ramas_music</a> -- live music on Twitch</h2>
   <p class="meta">Twitch · live</p>
   <p>
-    Where I play music outside of work.
+    Live improvised electronic music. No presets, no map, just
+    exploration.
   </p>
   <p class="tags">
-    <span>Music</span><span>Live</span>
+    <span>Live</span><span>Improvisation</span>
+    <span>Electronic</span>
   </p>
 </div>
