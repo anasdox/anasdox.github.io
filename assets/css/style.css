@@ -224,20 +224,30 @@ blockquote {
 
 .post-list { list-style: none; padding: 0; }
 .post-list li {
-  padding: 1em 0;
+  padding: 1.4em 0;
   border-bottom: 1px solid var(--border);
 }
+.post-list li:last-child { border-bottom: none; }
 .post-list .date {
   display: block;
   font-size: 0.85rem;
   color: var(--soft);
   font-variant-numeric: tabular-nums;
 }
-.post-list a {
-  font-size: 1.05rem;
+.post-list .title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0.2em 0 0.5em;
   border: none;
 }
-.post-list a:hover { color: var(--accent); }
+.post-list .title:hover { color: var(--accent); border: none; }
+.post-list p {
+  margin: 0.4em 0 0.6em;
+  font-size: 0.97rem;
+}
+.post-list .read-more { font-size: 0.9rem; }
 
 /* ===== Responsive ===== */
 

@@ -5,13 +5,15 @@ permalink: /blog/
 ---
 
 <h1>Blog</h1>
-<p class="muted">Notes on engineering management, AI-native tooling, and shipping in the open.</p>
+<p class="muted">Short essays on framing problems and staying in control of the build.</p>
 
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
       <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+      <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
     </li>
   {% else %}
     <li><p class="muted">More posts coming soon.</p></li>
