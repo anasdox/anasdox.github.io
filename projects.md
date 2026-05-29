@@ -148,43 +148,37 @@ problem, what did the framing reveal, what was built.
     technical leads, four senior contributors) responsible for the
     Undercloud orchestration layer behind OVHcloud Bare Metal: the
     system that turns racks of physical servers into allocatable
-    compute, tracks every server through its lifecycle (stock,
-    reserved, connected, delivered, reallocated, decommissioned), and
-    exposes the customer-facing APIs through which our cloud and
-    enterprise customers see that state. The team owns several
-    parallel chantiers at any time: self-encrypting drives rollout,
-    server intervention status communication, dynamic server
-    reallocation, OS reinstall rationalisation, server inventory
-    synchronisation, monitoring migration. Direction asks two outcomes
-    from us: predictability of delivery, and anticipation of delays.
+    compute, with several parallel chantiers in flight at any time.
+    Direction asks two outcomes from us: predictability of delivery,
+    and anticipation of delays.
   </p>
   <p>
     <strong>What framing kept revealing.</strong> Across every
     chantier the bottleneck was rarely engineering speed. It was the
-    shared understanding across boundary teams. "Delivered" meant
-    something else to the Industry team than to ours. "Blocked" tickets
-    often were not blocked. The same word travelled through Industry,
-    Cloud API, hardware engineering and data centre ops, and quietly
-    drifted at every hand-off. Ubiquitous language failure at the
-    organisational seam. The standing rituals re-derived the same
-    intermediate facts every Monday by hand, and the slippage between
-    sprints showed up only once a sprint had been lost to it.
+    shared understanding across boundary teams. The same word
+    travelled through the value chain and quietly drifted at every
+    hand-off. Ubiquitous language failure at the organisational seam.
   </p>
   <p>
-    <strong>What I changed.</strong> Each chantier now starts as a
-    framing exercise: who are the actors, draw the flows end to end,
-    surface where the language breaks across teams, write the contract
-    that both sides will sign. The quarterly review pipeline runs on
-    weekly snapshots, structured drift radars and sprint-granular
-    P50/P90 forecasts per epic, and the status that goes to direction
-    fits on a single screen. Cross-team escalation has moved from
-    ad-hoc messages to traceable, Jira-anchored hand-offs that survive
-    a holiday week.
+    <strong>FIR became the team's cadence.</strong> Facts, Insights
+    and Recommendations as the operating shape of every status loop.
+    Weekly snapshots collect the Facts. Drift radars and
+    sprint-granular P50/P90 forecasts per epic surface the Insights.
+    The status that goes to direction is one screen of named
+    Recommendations.
+  </p>
+  <p>
+    <strong>BDD became the contract.</strong> Each new chantier
+    starts as an executable scenario the business signs off and the
+    engineers run. That scenario is also the trace: cross-team
+    escalation moved from ad-hoc messages to Jira-anchored hand-offs
+    that survive a holiday week, because the contract is legible to
+    whoever picks it up next.
   </p>
   <p class="tags">
-    <span>Engineering leadership</span><span>Bare Metal</span>
-    <span>Undercloud</span><span>Cross-team framing</span>
-    <span>Ubiquitous language</span>
+    <span>FIR</span><span>BDD</span>
+    <span>Ubiquitous language</span><span>Bare Metal</span>
+    <span>Undercloud</span>
   </p>
 </div>
 
