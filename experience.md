@@ -19,37 +19,21 @@ open-source tools that codify it.
     <span class="org">at OVHcloud</span>
     <span class="dates">July 2022 - present · Rennes</span>
     <p>
-      <strong>The scope.</strong> I lead a team of six engineers
-      (two technical leads, four senior contributors) responsible
-      for the Undercloud orchestration layer behind OVHcloud Bare
-      Metal: the system that turns racks of physical servers into
-      allocatable compute, with several parallel chantiers in
-      flight at any time. Direction asks two outcomes from us:
-      predictability of delivery, and anticipation of delays.
+      I lead six engineers on the Undercloud layer behind OVHcloud
+      Bare Metal, the system that turns racks of physical servers
+      into allocatable compute. Direction asks two things of us:
+      predictability of delivery, and early warning of delays. The
+      bottleneck was rarely engineering speed. It was shared
+      understanding across boundary teams, where the same word
+      drifted at every hand-off.
     </p>
     <p>
-      <strong>What framing kept revealing.</strong> Across every
-      chantier the bottleneck was rarely engineering speed. It was
-      the shared understanding across boundary teams. The same word
-      travelled through the value chain and quietly drifted at
-      every hand-off. Ubiquitous language failure at the
-      organisational seam.
-    </p>
-    <p>
-      <strong>FIR became the team's cadence.</strong> Facts,
-      Insights and Recommendations as the operating shape of every
-      status loop. Weekly snapshots collect the Facts. Drift radars
-      and sprint-granular P50/P90 forecasts per epic surface the
-      Insights. The status that goes to direction is one screen of
-      named Recommendations.
-    </p>
-    <p>
-      <strong>BDD became the contract.</strong> Each new chantier
+      So FIR became our cadence: weekly snapshots collect the
+      Facts, drift radars and P50/P90 forecasts surface the
+      Insights, and direction gets one screen of named
+      Recommendations. BDD became the contract: each workstream
       starts as an executable scenario the business signs off and
-      the engineers run. That scenario is also the trace:
-      cross-team escalation moved from ad-hoc messages to
-      Jira-anchored hand-offs that survive a holiday week, because
-      the contract is legible to whoever picks it up next.
+      the engineers run, legible to whoever picks it up next.
     </p>
   </li>
 
@@ -58,23 +42,16 @@ open-source tools that codify it.
     <span class="org">at Placemeet</span>
     <span class="dates">March 2020 - July 2022</span>
     <p>
-      <strong>The problem.</strong> Professional event organisers
-      needed an online tool that respected the social mechanics of
-      a real event, not a video grid. The market shipped video
-      grids.
+      Professional event organisers needed an online tool that
+      respected the social mechanics of a real event. The market
+      shipped video grids. But the complaints were never about the
+      tools; they were about the lost hallway, the coffee, the "do
+      you have a minute."
     </p>
     <p>
-      <strong>What discovery revealed.</strong> The complaints
-      were not about the tools. They were about the loss of
-      incidental interaction (the hallway, the coffee, the "do you
-      have a minute"). Building a video platform would not have
-      addressed any of that.
-    </p>
-    <p>
-      <strong>What was built.</strong> A SaaS platform whose
-      architecture centred on those interactions rather than on
-      broadcast quality. I shipped the product end to end through
-      the COVID demand surge, hired the engineering team, and
+      So the platform we built centred its architecture on those
+      interactions rather than on broadcast quality. I shipped it
+      end to end through the COVID demand surge, hired the team, and
       built the operations underneath.
     </p>
   </li>
@@ -112,23 +89,20 @@ open-source tools that codify it.
     <p>
       Enterprise clients in banking, telecom and media all wanted
       "DevOps", and meant different things by it. The pain was
-      never the pipeline. It was the handoff between the team that
+      never the pipeline. It was the hand-off between the team that
       wrote the code and the team that ran it, encoded in a
-      contract neither side had actually read. I built a
-      discovery-first consulting practice that started every
-      engagement with structured interviews, FIR write-ups and a
-      shared functional specification. The internal orchestrator
-      we shipped automated the lifecycle, but it was always the
-      spec that closed the engagement.
+      contract neither side had read. I built a discovery-first
+      consulting practice: structured interviews, FIR write-ups, a
+      shared functional specification. We shipped an orchestrator
+      to automate the lifecycle, but it was always the spec that
+      closed the engagement.
     </p>
     <p>
       Four years, around fifty pre-sales engagements for large
       French enterprises, and the next cohort of Solutions
-      Architects trained on the same discipline. The feedback
-      clients sent back was always about two things: the
-      willingness to challenge the problem they thought they were
-      buying, and the time spent with the people who would have to
-      live with the answer.
+      Architects trained on the same discipline. Clients came back
+      for one thing: the willingness to challenge the problem they
+      thought they were buying.
     </p>
   </li>
 
