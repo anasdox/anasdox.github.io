@@ -70,7 +70,7 @@ Le site est lu par :
 **Hors-cible** : devs juniors cherchant un tuto, recruteurs cherchant
 un pur dev hands-on full-stack, audience grand public.
 
-Anas est basé Cesson-Sévigné (Bretagne). **Contrainte location** :
+Anas est basé Rennes (Bretagne). **Contrainte location** :
 présence bureau régulière (style "25% à Paris") = bloqueur. Voyage
 client = OK. Le site ne mentionne pas explicitement la contrainte
 (c'est une discussion à avoir au 1er échange), mais ne pas écrire
@@ -255,7 +255,7 @@ et sert à la racine. Délai typique : 30-90s. Pas d'Action à configurer.
 
 # Mémoire d'identité (Anas)
 
-Anas Ameziane, basé Cesson-Sévigné (Bretagne). FR + AR natifs, EN
+Anas Ameziane, basé Rennes (Bretagne). FR + AR natifs, EN
 professionnel, ES élémentaire. Ingénieur ENI Brest (2003-2007), GCP
 Core Infrastructure certifié.
 

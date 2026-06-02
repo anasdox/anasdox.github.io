@@ -60,5 +60,5 @@ Google Cloud Platform: Core Infrastructure (certified).
 
 ### Location
 
-Cesson-Sévigné, Brittany. Available across France and Europe for
+Rennes, Brittany. Available across France and Europe for
 client visits, workshops and on-site discovery sessions.
