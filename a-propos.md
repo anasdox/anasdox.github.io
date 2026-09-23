@@ -13,11 +13,12 @@ description: >-
 cta: true
 ---
 
-Je m'appelle Anas Ameziane. Je suis ingénieur, basé à Rennes. Depuis
-près de vingt ans, je travaille sur la partie du logiciel qui se joue
-avant le code : comprendre le problème, le formuler dans une langue
-que des ingénieurs peuvent construire, et garder ce sens intact
-jusqu'en production.
+Depuis près de vingt ans, j'ai travaillé sur toute la chaîne de
+production du logiciel, du code jusqu'à l'exploitation, en passant par
+l'architecture, la création de produits et la direction d'équipes. Ce
+qui m'a toujours occupé, à chaque étape : comprendre le vrai problème,
+le formuler dans une langue que des ingénieurs peuvent construire, et
+garder ce sens intact jusqu'en production.
 
 ## La question que j'explore
 
@@ -75,7 +76,7 @@ cinquantaine d'engagements à cadrer des problèmes avant de les
 construire. J'ai fondé deux startups, dont une plateforme SaaS
 d'événements en ligne que j'ai dirigée comme CEO. Aujourd'hui, je
 dirige une équipe d'ingénierie sur une plateforme d'infrastructure
-cloud.
+cloud, depuis Rennes.
 
 Chaque rôle m'a montré le même mode d'échec : livrer correctement la
 mauvaise chose. Le détail est sur la page
