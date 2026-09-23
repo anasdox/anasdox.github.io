@@ -41,6 +41,7 @@ social:
   email: anas.ameziane@gmail.com
 
 exclude:
+  - CLAUDE.md
   - README.md
   - .gitignore
   - vendor
