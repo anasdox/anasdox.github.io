@@ -1,10 +1,10 @@
 ---
-title: "Le pourquoi que je devais aux devs suivants"
+title: "Le pourquoi que je devais aux ingénieurs suivants"
 date: 2026-05-29
 translation_key: why
 topic: discovery
 tags: [specification]
-description: "Ce que je devais aux développeurs qui liraient mes specs, et pourquoi Faits, Insights, Recommandations est la structure à laquelle je confie le pourquoi."
+description: "Ce que je devais aux ingénieurs qui liraient mes specs, et pourquoi Faits, Insights, Recommandations est la structure à laquelle je confie le pourquoi."
 ---
 
 Pendant la première moitié de ma carrière, j'étais le développeur en
@@ -43,9 +43,9 @@ Des années plus tard, j'ai changé de côté. Je suis devenu architecte
 solutions en avant-vente : dans la salle avec le client, à cadrer le
 problème, concevoir la réponse, puis passer la main à l'équipe de
 delivery pour la construire. Pour la première fois, c'était moi qui
-écrivais la spec que le dev suivant lirait.
+écrivais la spec que l'ingénieur suivant lirait.
 
-J'avais une promesse très précise à tenir : ne pas faire à ces devs
+J'avais une promesse très précise à tenir : ne pas faire à ces ingénieurs
 ce qu'on m'avait fait.
 
 Cette promesse paraît évidente. En pratique, elle est plus difficile
@@ -53,7 +53,7 @@ qu'elle n'en a l'air. La pression sur l'architecte pousse à
 compresser : une recommandation nette, un effort estimé, un schéma
 propre. Elle pousse à retirer le bruit, les contradictions, les
 non-dits de la discovery, parce que la proposition doit paraître
-décidée. Chaque gramme de compression rend la vie du dev suivant plus
+décidée. Chaque gramme de compression rend la vie de l'ingénieur suivant plus
 difficile.
 
 Il me fallait une discipline qui me permette de compresser la
@@ -79,7 +79,7 @@ lecteur peut ne pas être d'accord, et ce désaccord est fondé.
 Recommandation référence les Insights dont elle découle.
 
 L'intérêt de la structure n'est pas son élégance. L'intérêt, c'est
-que le dev qui reprend la spec six semaines plus tard, dans un autre
+que l'ingénieur qui reprend la spec six semaines plus tard, dans un autre
 fuseau horaire, peut remonter d'une recommandation à l'insight qui la
 porte, et de cet insight à une phrase que quelqu'un a réellement
 prononcée. Le pourquoi n'est plus dans la tête de l'architecte. Il est
@@ -108,7 +108,7 @@ petit espace de travail où les colonnes ne sont pas optionnelles. Les
 entrées à gauche, puis les Faits, puis les Insights, puis les
 Recommandations, puis les livrables. Chaque élément pointe vers ce
 dont il dépend. Un Insight sans Fait n'existe pas dans la grille. Une
-Recommandation sans Insight n'existe pas dans la grille. Le dev qui
+Recommandation sans Insight n'existe pas dans la grille. L'ingénieur qui
 lit le livrable peut suivre le fil jusqu'à l'observation d'origine.
 La discipline devient mécanique, et c'est la seule façon pour elle de
 survivre à un long trimestre.
@@ -117,7 +117,7 @@ survivre à un long trimestre.
 
 Je ne suis pas naïf. Beaucoup d'engagements livrent encore une
 recommandation soignée et très peu de piste. Mais sur ceux où la
-piste a survécu, les devs suivants ont posé des questions plus
+piste a survécu, les ingénieurs suivants ont posé des questions plus
 tranchantes, pris de meilleures décisions locales, et contesté des
 choses que le cadrage d'origine avait mal comprises. C'est le seul
 résultat qui comptait pour moi depuis le jour où j'ai changé de côté.

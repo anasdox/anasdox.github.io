@@ -31,7 +31,7 @@ déjà publiés ; ceux qui n'en ont pas encore sont marqués comme tels.
   <li>
     <strong>Garder le pourquoi dans la chaîne</strong>
     <span>Une traçabilité qui survit au passage de relais, entre humains comme avec un agent.</span><br>
-    <a href="{{ '/le-pourquoi-que-je-devais-aux-devs-suivants/' | relative_url }}">Le pourquoi que je devais aux devs suivants</a>
+    <a href="{{ '/le-pourquoi-que-je-devais-aux-ingenieurs-suivants/' | relative_url }}">Le pourquoi que je devais aux ingénieurs suivants</a>
   </li>
   <li>
     <strong>Donner le contexte au dépôt</strong>
