@@ -195,24 +195,6 @@ blockquote p:last-child { margin-bottom: 0; }
 }
 .hero .lede { font-size: 1.14rem; line-height: 1.6; }
 
-.path {
-  list-style: none;
-  padding: 0.7em 0;
-  margin: 1.8em 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.15em 0;
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-.path li { margin: 0; white-space: nowrap; }
-/* La fleche suit le mot : une coupure de ligne tombe apres elle, jamais devant. */
-.path li:not(:last-child)::after { content: "->"; color: var(--soft); padding: 0 0.6em; }
-
 .signature { color: var(--soft); margin-top: 2.2em; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 0.8rem 1.4rem; align-items: center; margin: 1.8em 0 0; }
