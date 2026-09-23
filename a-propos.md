@@ -24,9 +24,9 @@ garder ce sens intact jusqu'en production.
 
 Les agents IA font tomber le coût d'exécution. Ma question est simple :
 si écrire le code ne coûte presque plus rien, jusqu'où un seul
-ingénieur peut-il porter le cycle de vie d'un produit ? La discovery,
-la spécification, l'architecture, l'orchestration des agents, la
-validation, la mise en production, et ce qu'on apprend ensuite.
+ingénieur peut-il porter le cycle de vie d'un produit ? La découverte,
+la spécification, l'architecture, la validation, la mise en production,
+et ce qu'on apprend ensuite, avec des agents à chacune de ces étapes.
 
 Je n'ai pas la réponse complète. Ce site est le carnet où je la
 cherche, en public, avec des expériences réelles plutôt que des
