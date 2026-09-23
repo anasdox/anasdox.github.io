@@ -60,11 +60,11 @@ newsletter:
 # Social (footer + JSON-LD Person via jekyll-seo-tag)
 social:
   name: Anas Ameziane
-  linkedin: https://www.linkedin.com/in/anasameziane-199b5058
+  linkedin: https://www.linkedin.com/in/anas-ameziane-199b5058
   github: https://github.com/anasdox
   email: anas.ameziane@gmail.com
   links:
-    - https://www.linkedin.com/in/anasameziane-199b5058
+    - https://www.linkedin.com/in/anas-ameziane-199b5058
     - https://github.com/anasdox
 
 exclude:

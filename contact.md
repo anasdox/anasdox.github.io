@@ -10,5 +10,5 @@ dans un vrai cycle de développement, si vous débutez dans un métier que
 l'IA transforme, ou si un article vous a fait réagir.
 
 - Email : [anas.ameziane@gmail.com](mailto:anas.ameziane@gmail.com)
-- LinkedIn : [linkedin.com/in/anasameziane-199b5058](https://www.linkedin.com/in/anasameziane-199b5058)
+- LinkedIn : [linkedin.com/in/anas-ameziane-199b5058](https://www.linkedin.com/in/anas-ameziane-199b5058)
 - GitHub : [github.com/anasdox](https://github.com/anasdox)

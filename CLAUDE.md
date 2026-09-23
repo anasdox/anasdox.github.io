@@ -247,5 +247,5 @@ Anas Ameziane, basé à Rennes (Bretagne). FR + AR natifs, EN
 professionnel, ES notions. Ingénieur ENI Brest (2003-2007), GCP Core
 Infrastructure certifié. Parcours détaillé : `parcours.md`.
 
-GitHub : `anasdox`. LinkedIn : `linkedin.com/in/anasameziane-199b5058`.
+GitHub : `anasdox`. LinkedIn : `linkedin.com/in/anas-ameziane-199b5058`.
 Email : `anas.ameziane@gmail.com`.
