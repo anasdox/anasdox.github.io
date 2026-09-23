@@ -1,41 +1,134 @@
 ---
 layout: default
-title: Home
+title: AI-Native Product Engineering
+description: >-
+  Le code ne coûte presque plus rien. Comprendre le problème, spécifier,
+  valider et livrer, si. Essais et expériences sur l'AI-Native Product
+  Engineering, par Anas Ameziane.
 ---
 
 <section class="hero">
-  <h1>Anas Ameziane</h1>
-  <p class="tagline">
-    I help engineering teams spend more time framing the problem<br>
-    than building the solution.
-  </p>
+  <p class="eyebrow">AI-Native Product Engineering</p>
+  <h1>Le code est devenu bon marché. Savoir quoi construire, non.</h1>
 
   <p class="lede">
-    Most software that ships broken was built correctly. It just solved
-    the wrong problem. The expensive bug is the one written into the
-    requirements before any code existed.
+    Les agents IA écrivent du code en quelques minutes. Comprendre le
+    problème, spécifier le comportement, valider le résultat et le mettre
+    en production demandent toujours du jugement humain.
+    L'AI-Native Product Engineering, c'est la discipline qui consiste à
+    porter tout ce chemin, du problème au produit puis à la production,
+    en laissant l'exécution aux agents.
   </p>
+
+  <ol class="path" aria-label="Le chemin">
+    <li>problème</li><li>spécification</li><li>agents</li><li>validation</li><li>production</li><li>apprentissage</li>
+  </ol>
 
   <p>
-    For nearly two decades, across consulting, founding a SaaS
-    company, and running engineering teams at OVHcloud, I have
-    worked on a single discipline: extracting what a business
-    actually needs, in language its engineers can build against.
+    Depuis près de vingt ans, je travaille sur ce qui se passe avant le
+    code : discovery, spécification, architecture, direction d'équipes
+    d'ingénierie. J'explore maintenant, en public, jusqu'où un ingénieur
+    peut porter le cycle de vie d'un produit quand l'exécution ne coûte
+    presque plus rien.
   </p>
 
-  <p>
-    It is not only a way of working. The open-source tools I build
-    encode it: FIR, BDD, and ubiquitous language turned into
-    software you can read.
-  </p>
-
-  <blockquote>
-    Spend more time understanding the problem than designing the solution.
-  </blockquote>
-
-  <div class="cta-row">
-    <a href="{{ '/method/' | relative_url }}">The method</a>
-    <a href="{{ '/projects/' | relative_url }}">The tools</a>
-    <a href="{{ '/contact/' | relative_url }}">Get in touch</a>
+  <div class="actions">
+    <a class="btn" href="{{ '/quand-l-agent-livre-plus-vite-que-je-ne-lis/' | relative_url }}">Lire l'article fondateur</a>
+    <a class="link-arrow" href="#suivre">Suivre le carnet</a>
   </div>
+
+  <p class="signature">Stop prompting. Start shipping.</p>
+</section>
+
+<section class="section">
+  <p class="label">01 / La thèse</p>
+  <h2>Le goulot d'étranglement a changé de place</h2>
+  <p>
+    Écrire du code devient moins cher et plus rapide chaque mois. Ce qui
+    ne s'accélère pas, c'est tout le reste : comprendre le vrai problème,
+    découvrir le bon produit, donner le contexte, spécifier, choisir une
+    architecture, orchestrer les agents, décider, valider, tester, livrer,
+    et apprendre de la production.
+  </p>
+  <p>
+    Un agent génère. Il n'endosse pas la responsabilité. Quand il livre
+    trois mille lignes en dix minutes, la question n'est plus «&nbsp;comment
+    coder&nbsp;», mais «&nbsp;comment garder le contrôle&nbsp;». La réponse ne se trouve
+    pas dans un meilleur prompt. Elle se trouve dans la façon dont on
+    cadre le problème, dont on écrit le contrat de comportement, et dont
+    on valide ce qui arrive.
+  </p>
+  <p>
+    L'ingénieur qui compte ne se contente plus d'écrire du code. Il porte
+    le chemin du problème à la production. L'IA amplifie ce rôle. C'est
+    ce que j'appelle l'AI-Native Product Engineering.
+  </p>
+</section>
+
+<section class="section">
+  <p class="label">02 / Commencer ici</p>
+  <h2>Trois articles pour entrer dans le sujet</h2>
+  {%- assign starts = "/quand-l-agent-livre-plus-vite-que-je-ne-lis/,/le-depot-ai-native/,/la-question-qui-contenait-sa-propre-reponse/" | split: "," %}
+  <ul class="entries">
+    {%- for u in starts %}
+      {%- assign p = site.posts | where: "url", u | first %}
+      {%- if p %}
+    <li>
+      <p class="meta">{% include topic.html slug=p.topic %}</p>
+      <a class="title" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      <p>{{ p.description }}</p>
+    </li>
+      {%- endif %}
+    {%- endfor %}
+  </ul>
+  <p><a class="link-arrow" href="{{ '/articles/' | relative_url }}">Tous les articles</a></p>
+</section>
+
+<section class="section">
+  <p class="label">03 / Le labo</p>
+  <h2>Des outils, pas des slides</h2>
+  <p>
+    Chaque idée défendue ici est mise à l'épreuve dans un outil open
+    source : une grille qui interdit une recommandation sans insight, un
+    modèle de dépôt où le contrat est le scénario exécutable, un
+    gestionnaire de projet qui sépare ce qu'une machine peut prouver de
+    ce qu'un humain doit décider.
+  </p>
+  <p><a class="link-arrow" href="{{ '/labo/' | relative_url }}">Voir les expériences</a></p>
+</section>
+
+<section class="section">
+  <p class="label">04 / Pour qui</p>
+  <h2>Deux points d'entrée, une seule discipline</h2>
+  <div class="pair">
+    <div>
+      <h3>Vous débutez</h3>
+      <p>
+        Savoir coder ne suffit plus. Ce qui fera la différence : prendre
+        un vrai problème et le mener jusqu'à un produit en production,
+        avec un workflow AI-native que vous savez expliquer et défendre.
+      </p>
+    </div>
+    <div>
+      <h3>Vous êtes dans une équipe</h3>
+      <p>
+        Vous intégrez des agents dans un vrai cycle de développement :
+        contexte, spécification, revue, portes qualité. Le code arrive
+        plus vite que votre capacité à le comprendre. C'est là que ça se
+        joue.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="suivre">
+  <p class="label">05 / Suivre</p>
+  <h2>Un carnet, pas un fil d'actualité</h2>
+  <p>
+    J'écris quand une expérience a produit quelque chose qui mérite
+    d'être lu, y compris quand elle a échoué. Le
+    <a href="{{ '/playbook/' | relative_url }}">Playbook</a> rassemblera
+    la méthode complète, de l'idée à la production.
+  </p>
+  {% include cta.html %}
 </section>

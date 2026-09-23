@@ -1,21 +1,58 @@
 ---
 layout: default
-title: Blog
-permalink: /blog/
+title: Articles
+permalink: /articles/
+redirect_from:
+  - /blog/
+description: >-
+  Essais sur l'AI-Native Product Engineering : agents de code, context
+  engineering, discovery, spécification exécutable, validation et charge
+  cognitive.
 ---
 
-<h1>Blog</h1>
-<p class="muted">Short essays on framing problems and staying in control of the build.</p>
+<p class="eyebrow">Articles</p>
+<h1>Ce que j'apprends en construisant avec des agents</h1>
+<p class="dek">
+  Des essais courts, chacun ancré dans un fait vécu. Les plus anciens
+  datent d'avant les agents : ils montrent d'où vient la thèse.
+</p>
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-      <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
-    </li>
-  {% else %}
-    <li><p class="muted">More posts coming soon.</p></li>
-  {% endfor %}
+<ul class="entries">
+  {%- for post in site.posts %}
+  <li>
+    <p class="meta">
+      {% include topic.html slug=post.topic %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date %}</time>
+    </p>
+    <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 40 }}</p>
+  </li>
+  {%- else %}
+  <li><p>Les premiers articles arrivent.</p></li>
+  {%- endfor %}
 </ul>
+
+<div class="topics">
+  <p class="label">Par thème</p>
+  {%- for t in site.data.topics %}
+    {%- assign primary = site.posts | where: "topic", t.slug -%}
+    {%- assign secondary = site.posts | where_exp: "p", "p.tags contains t.slug" -%}
+    {%- assign all = primary | concat: secondary | uniq -%}
+    {%- if all.size > 0 %}
+  <section id="{{ t.slug }}">
+    <h2>{{ t.name }}</h2>
+    <p class="blurb">{{ t.blurb }}</p>
+    <ul>
+      {%- for p in all %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+    {%- endif %}
+  {%- endfor %}
+</div>
+
+<p class="muted note">
+  Les originaux anglais restent disponibles : chaque article porte un
+  lien «&nbsp;Read in English&nbsp;».
+</p>

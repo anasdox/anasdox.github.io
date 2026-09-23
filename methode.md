@@ -1,270 +1,313 @@
 ---
 layout: page
-title: Method
-permalink: /method/
+title: Méthode
+eyebrow: La moitié amont
+permalink: /methode/
+redirect_from:
+  - /method/
+subtitle: >-
+  Tout ce qui se passe avant que l'agent écrive la première ligne.
+description: >-
+  La méthode de cadrage derrière l'AI-Native Product Engineering :
+  entretien sans biais, FIR (Faits, Insights, Recommandations), Design
+  Sprint, analyse systémique, langage omniprésent, BDD et spécification
+  fonctionnelle comme contrat.
+cta: true
 ---
 
-A software team has two ways to fail.
+Cette page décrit la moitié amont de l'AI-Native Product Engineering.
+Je l'ai construite avant les agents, sur des années de conseil, de
+produit et d'équipes d'ingénierie. Elle compte davantage depuis : quand
+le code ne coûte presque plus rien, une erreur de cadrage est
+implémentée en quelques minutes, et elle a l'air aussi propre que le
+reste.
 
-The first is technical. The build breaks, the database melts, the API
-returns the wrong shape. These failures are visible, painful, and
-solvable. Every engineer I have worked with has tools to address them.
+---
 
-The second way is invisible. The team ships exactly what was asked,
-exactly on time, and nobody uses it. Or the customer uses it and is
-quietly disappointed. Or six months later a new requirement reveals
-that the wrong abstraction was baked into the schema. These failures
-are not technical. They are framing failures. They were written into
-the requirements long before any code was touched.
+Une équipe logicielle a deux façons d'échouer.
 
-Most of my career has been spent on the second failure mode. What
-follows is what I have learned.
+La première est technique. Le build casse, la base de données
+s'effondre, l'API renvoie la mauvaise forme. Ces échecs sont visibles,
+douloureux, et solubles. Tous les ingénieurs avec qui j'ai travaillé
+ont des outils pour les traiter.
 
-> Spend more time understanding the problem than designing the solution.
+La seconde est invisible. L'équipe livre exactement ce qui a été
+demandé, exactement à l'heure, et personne ne s'en sert. Ou le client
+s'en sert et il est discrètement déçu. Ou six mois plus tard, un
+nouveau besoin révèle que la mauvaise abstraction a été gravée dans le
+schéma. Ces échecs ne sont pas techniques. Ce sont des échecs de
+cadrage. Ils étaient écrits dans les exigences bien avant que la
+moindre ligne de code soit touchée.
 
-This is the only rule. Everything below is a way to live up to it.
+J'ai passé l'essentiel de ma carrière sur ce second mode d'échec. Voici
+ce que j'en ai appris.
 
-## 1. The art of the unbiased interview
+> Passer plus de temps à comprendre le problème qu'à concevoir la solution.
 
-Discovery starts with a conversation, and most engineering
-conversations are quietly biased toward the answer the interviewer
-already has in mind. The bias is rarely deliberate. It is in the
-shape of the questions.
+C'est la seule règle. Tout ce qui suit est une façon de s'y tenir.
 
-A solution-shaped question prompts a solution-shaped answer. *"Would
-it help if you had a button that exported the report?"* presupposes
-a button, an export, and a report. The stakeholder, eager to be
-useful, says yes. You have not learned what they actually do with the
-data. You have learned that they will not refuse a button.
+## 1. L'art de l'entretien sans biais
 
-The unbiased interview is a discipline:
+La discovery commence par une conversation, et la plupart des
+conversations d'ingénierie penchent discrètement vers la réponse que
+l'intervieweur a déjà en tête. Le biais est rarement délibéré. Il est
+dans la forme des questions.
 
-- **Open questions over closed ones.** *"Walk me through the last time
-  you needed this."* not *"Do you need this every week?"*
-- **No leading words.** Drop *"obviously"*, *"easy"*, *"just"*,
-  *"don't you think"*. Each of them tilts the room.
-- **Solution-free phrasing.** Ask about the problem, the pain, the
-  workaround. Never about your idea. If the stakeholder volunteers a
-  solution, write it down and keep asking about the problem.
-- **The five whys.** The first answer is almost always the surface.
-  Keep asking until you reach a constraint, a fear, or an economic
-  fact.
-- **Silence as a tool.** People fill silence with the things they did
-  not plan to say. Wait three extra seconds before your next question.
+Une question en forme de solution appelle une réponse en forme de
+solution. *«&nbsp;Est-ce que ça vous aiderait d'avoir un bouton qui exporte
+le rapport ?&nbsp;»* présuppose un bouton, un export et un rapport.
+L'interlocuteur, soucieux d'être utile, dit oui. Vous n'avez pas appris
+ce qu'il fait réellement des données. Vous avez appris qu'il ne
+refusera pas un bouton.
 
-The output of a good interview is not agreement. It is a richer
-picture of the problem than either of you had at the start.
+L'entretien sans biais est une discipline :
 
-## 2. FIR: a structure for what you heard
+- **Des questions ouvertes plutôt que fermées.** *«&nbsp;Racontez-moi la
+  dernière fois que vous en avez eu besoin.&nbsp;»* et non *«&nbsp;Vous en avez
+  besoin chaque semaine ?&nbsp;»*
+- **Pas de mots qui orientent.** Bannir *«&nbsp;évidemment&nbsp;»*, *«&nbsp;facile&nbsp;»*,
+  *«&nbsp;juste&nbsp;»*, *«&nbsp;vous ne pensez pas que&nbsp;»*. Chacun fait pencher la
+  pièce.
+- **Des formulations sans solution.** Interroger le problème, la
+  douleur, le contournement. Jamais votre idée. Si l'interlocuteur
+  propose une solution, notez-la et continuez à interroger le problème.
+- **Les cinq pourquoi.** La première réponse est presque toujours la
+  surface. Continuez jusqu'à atteindre une contrainte, une peur ou un
+  fait économique.
+- **Le silence comme outil.** Les gens remplissent le silence avec ce
+  qu'ils n'avaient pas prévu de dire. Attendez trois secondes de plus
+  avant la question suivante.
 
-After the interview comes the trap: the urge to immediately propose a
-solution. The protection against the trap is to write down what you
-heard, in three separate layers, with no skipping.
+Le produit d'un bon entretien n'est pas un accord. C'est une image du
+problème plus riche que celle que chacun avait au départ.
+
+## 2. FIR : une structure pour ce qu'on a entendu
+
+Après l'entretien vient le piège : l'envie de proposer immédiatement
+une solution. La protection contre ce piège, c'est d'écrire ce qu'on a
+entendu, en trois couches séparées, sans en sauter aucune.
 
 {::nomarkdown}
 <div class="mermaid">
 flowchart LR
-  F["Facts (observable)"] --> I["Insights (interpretive)"] --> R["Recommendations (actionable)"]
+  F["Faits (observables)"] --> I["Insights (interprétatifs)"] --> R["Recommandations (actionnables)"]
 </div>
 {:/nomarkdown}
 
-### Facts
+### Faits
 
-What was actually said or observed, in the speaker's own words. No
-paraphrase, no interpretation. *"Marion processes the reservation
-file every Monday morning. She uses Excel. The file has between
-2 000 and 5 000 rows. She told me she stays late on Monday."*
+Ce qui a réellement été dit ou observé, avec les mots de la personne.
+Pas de paraphrase, pas d'interprétation. *«&nbsp;Marion traite le fichier
+des réservations chaque lundi matin. Elle utilise Excel. Le fichier
+compte entre 2 000 et 5 000 lignes. Elle m'a dit qu'elle reste tard le
+lundi.&nbsp;»*
 
-Facts are the only layer that can be checked against reality.
+Les Faits sont la seule couche qu'on peut vérifier contre la réalité.
 
 ### Insights
 
-What the facts mean once you read them together. Patterns,
-contradictions, gaps, surprises. *"Marion's workload doubles on
-Mondays, but the team capacity plan treats every day equally. The
-manual nature of the work explains the late evenings, and no one has
-ever computed the cost of that overtime."*
+Ce que signifient les faits quand on les lit ensemble. Des motifs, des
+contradictions, des manques, des surprises. *«&nbsp;La charge de Marion
+double le lundi, mais le plan de capacité de l'équipe traite tous les
+jours de la même façon. La nature manuelle du travail explique les
+soirées tardives, et personne n'a jamais calculé le coût de ces heures
+supplémentaires.&nbsp;»*
 
-Insights are an interpretation. They are falsifiable. A second
-listener can disagree, and the disagreement is productive.
+Les Insights sont une interprétation. Ils sont réfutables. Un second
+auditeur peut ne pas être d'accord, et ce désaccord est productif.
 
-### Recommendations
+### Recommandations
 
-Actions that follow from the insights. *"Automate the row-level
-validation of the file. Surface the actual Monday workload in the
-team capacity plan. Measure the overtime cost before deciding whether
-the automation pays for itself."*
+Les actions qui découlent des insights. *«&nbsp;Automatiser la validation
+ligne à ligne du fichier. Faire apparaître la vraie charge du lundi
+dans le plan de capacité. Mesurer le coût des heures supplémentaires
+avant de décider si l'automatisation se rentabilise.&nbsp;»*
 
-Recommendations are cheap and disposable. They are the part of the
-work that gets argued about most, and it is fine, because the Facts
-and Insights underneath them are solid.
+Les Recommandations sont bon marché et jetables. C'est la partie du
+travail sur laquelle on se dispute le plus, et c'est très bien, parce
+que les Faits et les Insights en dessous sont solides.
 
-The discipline is to **never skip a layer**. Recommendations without
-Insights are opinions. Insights without Facts are guesses.
+La discipline consiste à **ne jamais sauter une couche**. Des
+Recommandations sans Insights sont des opinions. Des Insights sans
+Faits sont des suppositions.
 
-## 3. Design Sprint as collective framing
+## 3. Le Design Sprint comme cadrage collectif
 
-The interview-and-FIR pipeline is built for one-to-one listening.
-There are moments when it is the wrong tool: when ten stakeholders
-hold ten mental models of the same problem, when the calendar will
-not survive fifteen sequential discovery sessions, when the decision
-is political enough that no one will commit privately to what they
-would commit to publicly.
+Le couple entretien et FIR est fait pour l'écoute en tête-à-tête. Il y
+a des moments où c'est le mauvais outil : quand dix parties prenantes
+portent dix modèles mentaux du même problème, quand l'agenda ne
+survivra pas à quinze séances de discovery successives, quand la
+décision est assez politique pour que personne ne s'engage en privé
+sur ce qu'il assumerait en public.
 
-For those moments I run a Design Sprint. The original five-day
-structure (Map, Sketch, Decide, Prototype, Test) is the one I have
-used most often with clients, adapted to whatever constraints the
-engagement allowed.
-
-{::nomarkdown}
-<div class="mermaid">
-flowchart LR
-  Map["Day 1: Map"] --> Sketch["Day 2: Sketch"] --> Decide["Day 3: Decide"] --> Proto["Day 4: Prototype"] --> Test["Day 5: Test"]
-</div>
-{:/nomarkdown}
-
-The output that matters is rarely the prototype. The prototype is a
-forcing function: it makes the room commit to a single shared
-articulation of the problem, because you cannot prototype an
-ambiguity. By the middle of the week, the room knows what the problem
-is in a way that no preceding workshop had produced. The user-test
-session at the end is then a discipline of confronting that shared
-understanding with real users, and discovering which parts of it the
-users did not, in fact, share.
-
-I have facilitated sprints of this kind for several clients across
-different industries. The ones that worked best are those where the
-sponsor accepted, in advance, that the answer might be: *"the problem
-you brought us is not the one we found."* That up-front commitment is
-harder than the five days.
-
-## 4. Systemic analysis when the problem is the system
-
-Some problems do not survive a one-shot framing exercise, no matter
-how good the interview was. The bug keeps coming back. The team keeps
-burning out. The customer keeps churning. Every individual fix works
-in isolation, and the aggregate gets worse.
-
-When that pattern shows up, the unit of analysis is not the feature.
-It is the system: the actors, the flows between them, the stocks that
-accumulate or deplete, and the feedback loops that reinforce or
-balance them. The vocabulary comes from systems thinking
-(Senge, Meadows, Forrester), and the diagnostic question is the one
-Donella Meadows made famous: *where are the leverage points*.
-
-I have led transformation engagements where the technical scope was
-visible but the structural cause was not. The recurring pattern was
-the same: the team had been optimising at a low-leverage point (a new
-tool, a new process, a new ceremony) for years, and the structure of
-the incentives upstream made each optimisation cancel out within a
-quarter.
+Dans ces moments-là, j'anime un Design Sprint. La structure d'origine
+sur cinq jours (Map, Sketch, Decide, Prototype, Test) est celle que
+j'ai le plus souvent utilisée avec des clients, adaptée aux contraintes
+de chaque engagement.
 
 {::nomarkdown}
 <div class="mermaid">
 flowchart LR
-  Struct["Structure (incentives, flows)"] --> Loop["Feedback loop"] --> Sym["Symptom (what hurts)"]
+  Map["Jour 1 : Map"] --> Sketch["Jour 2 : Sketch"] --> Decide["Jour 3 : Decide"] --> Proto["Jour 4 : Prototype"] --> Test["Jour 5 : Test"]
 </div>
 {:/nomarkdown}
 
-Reading right to left is where leverage hides: the symptom is loud
-but cheap to push on, the structure is quiet but the only place a
-push compounds.
+Le résultat qui compte est rarement le prototype. Le prototype est une
+fonction de forçage : il oblige la salle à s'engager sur une seule
+formulation partagée du problème, parce qu'on ne peut pas prototyper
+une ambiguïté. Au milieu de la semaine, la salle sait quel est le
+problème, d'une manière qu'aucun atelier précédent n'avait produite. La
+séance de test utilisateurs à la fin devient alors une discipline :
+confronter cette compréhension partagée à de vrais utilisateurs, et
+découvrir quelles parties ils ne partageaient pas, en réalité.
 
-Systemic analysis is the same listening discipline as the interview,
-applied to a different object. You ask the same kinds of questions,
-you write Facts before Insights, but the Facts are about flows and
-loops instead of features, and the Insights are about the structure
-that produces the symptoms. The recommendations are then about where
-in the structure to push, not which symptom to suppress.
+J'ai animé des sprints de ce type pour plusieurs clients dans
+différents secteurs. Ceux qui ont le mieux marché sont ceux où le
+sponsor avait accepté, à l'avance, que la réponse puisse être : *«&nbsp;le
+problème que vous nous avez apporté n'est pas celui que nous avons
+trouvé.&nbsp;»* Cet engagement préalable est plus difficile que les cinq
+jours.
 
-Without this lens, transformation engagements default to renaming
-problems instead of resolving them. With it, the engagement gets much
-smaller in scope and much more uncomfortable in conclusion, which I
-think is the right shape.
+## 4. L'analyse systémique quand le problème, c'est le système
 
-## 5. Ubiquitous language as the test
+Certains problèmes ne survivent pas à un exercice de cadrage ponctuel,
+aussi bon que soit l'entretien. Le bug revient sans cesse. L'équipe
+s'épuise sans cesse. Le client part sans cesse. Chaque correction
+fonctionne isolément, et l'ensemble empire.
 
-When the team and the business can argue about a feature using the
-same words, you have understood the problem. When the engineers
-silently translate every business word into a different engineering
-word, you have not.
+Quand ce motif apparaît, l'unité d'analyse n'est plus la
+fonctionnalité. C'est le système : les acteurs, les flux entre eux, les
+stocks qui s'accumulent ou s'épuisent, et les boucles de rétroaction
+qui les renforcent ou les équilibrent. Le vocabulaire vient de la
+pensée systémique (Senge, Meadows, Forrester), et la question
+diagnostique est celle que Donella Meadows a rendue célèbre : *où sont
+les points de levier*.
 
-This is Eric Evans's diagnostic from *Domain-Driven Design*, and it
-is the single most reliable signal I know of in software discovery.
+J'ai mené des chantiers de transformation où le périmètre technique
+était visible mais la cause structurelle ne l'était pas. Le motif
+récurrent était le même : l'équipe optimisait depuis des années un
+point de faible levier (un nouvel outil, un nouveau processus, un
+nouveau rituel), et la structure des incitations en amont annulait
+chaque optimisation en moins d'un trimestre.
 
-> If the conversation in the standup uses words that would not be
-> recognised at a customer review, the model is not shared.
+{::nomarkdown}
+<div class="mermaid">
+flowchart LR
+  Struct["Structure (incitations, flux)"] --> Loop["Boucle de rétroaction"] --> Sym["Symptôme (ce qui fait mal)"]
+</div>
+{:/nomarkdown}
 
-Ubiquitous language is not a glossary. A glossary is what you write
-to *pretend* the language is shared. The language is real when you
-hear an engineer correct a product manager on a fine distinction, in
-the product manager's own vocabulary, and the product manager nods.
+C'est en lisant de droite à gauche qu'on trouve le levier : le
+symptôme est bruyant mais peu rentable à pousser, la structure est
+silencieuse mais c'est le seul endroit où une poussée se cumule.
 
-I treat it as a forcing function. If the team cannot find a single
-word for a concept, the concept is not yet stable. Until it is, no
-schema, no API, no migration.
+L'analyse systémique est la même discipline d'écoute que l'entretien,
+appliquée à un autre objet. On pose le même genre de questions, on
+écrit les Faits avant les Insights, mais les Faits portent sur des flux
+et des boucles plutôt que sur des fonctionnalités, et les Insights
+portent sur la structure qui produit les symptômes. Les
+recommandations disent alors où pousser dans la structure, pas quel
+symptôme étouffer.
 
-## 6. Executable specification (BDD)
+Sans cette lentille, les chantiers de transformation se contentent par
+défaut de renommer les problèmes au lieu de les résoudre. Avec elle, le
+chantier devient beaucoup plus petit en périmètre et beaucoup plus
+inconfortable en conclusion, ce qui me paraît être la bonne forme.
 
-Behavior-Driven Development is not a testing framework. It is a
-discovery technique that happens to produce tests.
+## 5. Le langage omniprésent comme test
 
-The artifact is a sentence in three parts: *Given* a context, *when*
-an event occurs, *then* a result is expected. Each part has to be
-specific enough that an engineer can build it and a business owner
-can sign off on it.
+Quand l'équipe et le métier peuvent se disputer sur une fonctionnalité
+avec les mêmes mots, vous avez compris le problème. Quand les
+ingénieurs traduisent en silence chaque mot métier en un autre mot
+d'ingénierie, vous ne l'avez pas compris.
+
+C'est le diagnostic d'Eric Evans dans *Domain-Driven Design*, et c'est
+le signal le plus fiable que je connaisse en discovery logicielle.
+
+> Si la conversation au stand-up utilise des mots qu'on ne reconnaîtrait
+> pas en revue client, le modèle n'est pas partagé.
+
+Le langage omniprésent (*ubiquitous language*) n'est pas un glossaire.
+Un glossaire, c'est ce qu'on écrit pour *faire semblant* que la langue
+est partagée. La langue est réelle quand on entend un ingénieur
+corriger un product manager sur une distinction fine, dans le
+vocabulaire du product manager lui-même, et que le product manager
+acquiesce.
+
+Je le traite comme une fonction de forçage. Si l'équipe ne trouve pas
+un seul mot pour un concept, le concept n'est pas encore stable. Tant
+qu'il ne l'est pas : pas de schéma, pas d'API, pas de migration.
+
+## 6. La spécification exécutable (BDD)
+
+Le Behavior-Driven Development n'est pas un framework de test. C'est
+une technique de discovery qui se trouve produire des tests.
+
+L'artefact est une phrase en trois parties : *étant donné* un contexte,
+*quand* un événement se produit, *alors* un résultat est attendu.
+Chaque partie doit être assez précise pour qu'un ingénieur puisse la
+construire et qu'un responsable métier puisse la valider.
 
 ```
-Given a reservation file with 3 000 rows including 12 invalid entries,
-when Marion uploads the file at 09:00 on Monday,
-then the system flags the 12 invalid rows in under 30 seconds
-and stores the 2 988 valid rows in the inventory.
+Étant donné un fichier de réservations de 3 000 lignes dont 12 invalides,
+quand Marion dépose le fichier le lundi à 09:00,
+alors le système signale les 12 lignes invalides en moins de 30 secondes
+et enregistre les 2 988 lignes valides dans l'inventaire.
 ```
 
-The first time a team writes specifications like this, half of them
-turn out to be impossible to write. The numbers are not known. The
-edge cases were never discussed. The expected behaviour was assumed.
-That is the value of the exercise: BDD makes the gaps in your
-understanding loud.
+La première fois qu'une équipe écrit des spécifications de ce type, la
+moitié se révèlent impossibles à écrire. Les chiffres ne sont pas
+connus. Les cas limites n'ont jamais été discutés. Le comportement
+attendu était supposé. C'est toute la valeur de l'exercice : le BDD
+rend bruyants les trous de votre compréhension.
 
-The artifact is reviewable by the business and executable by the
-engineers. It outlives the meeting. It survives the team rotation.
-It is the single best functional specification I have ever shipped.
+L'artefact est relisible par le métier et exécutable par les
+ingénieurs. Il survit à la réunion. Il survit à la rotation de
+l'équipe. C'est la meilleure spécification fonctionnelle que j'aie
+jamais livrée.
 
-## 7. The functional specification as a contract
+Avec des agents, il devient aussi l'unité de relecture : on ne relit
+plus les trois mille lignes, on relit les scénarios qu'elles doivent
+satisfaire. C'est le sujet de
+[Quand l'agent livre plus vite que je ne lis]({{ '/quand-l-agent-livre-plus-vite-que-je-ne-lis/' | relative_url }}).
 
-Everything above produces one tangible deliverable: a functional
-specification that holds the shared understanding. It contains the
-facts you observed, the insights you drew, the recommendations you
-chose, the ubiquitous language you agreed on, and the executable
-scenarios that test it.
+## 7. La spécification fonctionnelle comme contrat
 
-This document is not a wishlist. It is a contract: between business
-and engineering, and against your future self. When the team rotates
-or the product evolves, the spec is what protects the original
-intent from being silently rewritten by whoever is in the room next.
+Tout ce qui précède produit un livrable tangible : une spécification
+fonctionnelle qui porte la compréhension partagée. Elle contient les
+faits observés, les insights tirés, les recommandations retenues, le
+langage omniprésent sur lequel on s'est accordé, et les scénarios
+exécutables qui le testent.
 
-A good specification is short. It is precise about what is in scope,
-honest about what is out of scope, and clear on what success looks
-like. It is editable, versioned, and reviewed like code.
+Ce document n'est pas une liste de souhaits. C'est un contrat : entre
+le métier et l'ingénierie, et contre votre propre futur. Quand l'équipe
+change ou que le produit évolue, la spec est ce qui protège
+l'intention d'origine contre sa réécriture silencieuse par celui qui se
+trouve dans la pièce ensuite.
 
-## How I use this in practice
+Une bonne spécification est courte. Elle est précise sur ce qui est
+dans le périmètre, honnête sur ce qui en est exclu, et claire sur ce à
+quoi ressemble le succès. Elle est éditable, versionnée, et relue comme
+du code.
 
-A framing engagement, when I run one, has the same shape. I sit with
-three or four stakeholders, in separate sessions, and ask them to
-walk me through their work. I listen for the words they use, the
-moments they hesitate, the workarounds they apologise for. I take
-notes in the Facts layer only.
+## Comment je l'applique
 
-Between sessions, I write the Insights. Patterns surface. Two
-stakeholders use the same word for different things, or different
-words for the same thing. The team's mental model of its own process
-turns out to have holes.
+Un engagement de cadrage, quand j'en mène un, a toujours la même forme.
+Je m'assois avec trois ou quatre parties prenantes, en séances
+séparées, et je leur demande de me raconter leur travail. J'écoute les
+mots qu'elles emploient, les moments où elles hésitent, les
+contournements dont elles s'excusent. Je prends des notes uniquement
+dans la couche des Faits.
 
-By the time I propose recommendations, the business has done most of
-the convergence work itself, by hearing its own Facts read back to
-it. The recommendations are rarely the bottleneck. The framing is.
+Entre les séances, j'écris les Insights. Des motifs apparaissent. Deux
+parties prenantes utilisent le même mot pour des choses différentes, ou
+des mots différents pour la même chose. Le modèle mental que l'équipe a
+de son propre processus se révèle troué.
 
-If you want to see what this looks like applied to my current team
-at OVHcloud, the [Projects]({{ '/projects/' | relative_url }}) page
-has concrete examples.
+Au moment où je propose des recommandations, le métier a fait
+l'essentiel du travail de convergence lui-même, en entendant ses
+propres Faits relus devant lui. Les recommandations sont rarement le
+goulot. Le cadrage, si.
+
+Les outils open source qui encodent cette méthode sont dans le
+[Labo]({{ '/labo/' | relative_url }}).
