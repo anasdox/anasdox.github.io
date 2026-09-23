@@ -2,24 +2,30 @@
 
 Personal website of Anas Ameziane, served at <https://anasdox.github.io/>.
 
-Built as a minimal Jekyll site with a hand-written CSS theme. No
-JavaScript, no build step on your machine: GitHub Pages picks up the
-source on every push and builds it.
+AI-Native Product Engineering: essays, experiments and method, in
+French first (English originals kept in `_en/`). Minimal Jekyll site
+with a hand-written CSS theme. No JavaScript except Mermaid on pages
+that contain a diagram, no build step on your machine: GitHub Pages
+picks up the source on every push and builds it.
 
 ## Structure
 
 ```
-_config.yml          site metadata + nav
+_config.yml          site metadata, SEO, nav, newsletter hook
+_data/               editorial topics, French month names
 _layouts/            default, page, post
-_includes/           header, footer
-_posts/              blog posts (YYYY-MM-DD-slug.md)
-assets/css/style.css single hand-written stylesheet
-index.html           home (hero)
-about.md             about page
-experience.md        career timeline
-projects.md          project cards
-blog.html            blog index
-contact.md           contact info
+_includes/           header, footer, cta, date, topic
+_posts/              French essays (YYYY-MM-DD-slug.md)
+_en/                 English originals, served at their original URLs
+assets/css/style.css single hand-written stylesheet (light + dark)
+index.html           home
+articles.html        /articles/
+labo.md              /labo/ (experiments)
+playbook.md          /playbook/ (in preparation)
+methode.md           /methode/
+a-propos.md          /a-propos/
+parcours.md          /parcours/ (career)
+contact.md           /contact/
 ```
 
 ## Edit content
@@ -29,9 +35,11 @@ post, drop a file in `_posts/` named `YYYY-MM-DD-slug.md`:
 
 ```markdown
 ---
-layout: post
 title: "Your title"
 date: 2026-05-28
+description: "150-160 characters, used as meta description and lede."
+topic: validation        # a slug from _data/topics.yml
+tags: [agentic]
 ---
 
 Your post here.
