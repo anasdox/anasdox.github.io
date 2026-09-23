@@ -1,0 +1,26 @@
+{%- comment -%}
+  Appel a l'action de fin de page. Tant que site.newsletter.action est vide,
+  on propose de suivre (RSS, LinkedIn). Des qu'un fournisseur est branche,
+  le meme bloc devient un formulaire email, sans JS.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: page.lang | default: site.lang -%}
+<aside class="cta" aria-label="{% if lang == 'en' %}Follow{% else %}Suivre{% endif %}">
+  {%- if lang == 'en' %}
+  <p class="cta-text">If you're interested in how AI changes the way we build products, follow along.</p>
+  {%- else %}
+  <p class="cta-text">Si la façon dont l'IA change notre manière de construire des produits vous intéresse, suivez le carnet.</p>
+  {%- endif %}
+  {%- if site.newsletter.action != "" %}
+  <form class="cta-form" action="{{ site.newsletter.action }}" method="post">
+    <label for="cta-email">Email</label>
+    <input id="cta-email" type="email" name="{{ site.newsletter.field | default: 'email' }}" autocomplete="email" required>
+    <button type="submit">{% if lang == 'en' %}Join the list{% else %}Rejoindre la liste{% endif %}</button>
+  </form>
+  {%- else %}
+  <p class="cta-links">
+    {%- if lang != 'en' %}<a href="{{ '/feed.xml' | relative_url }}">Flux RSS</a>{% endif %}
+    <a href="{{ site.social.linkedin }}" rel="noopener">LinkedIn</a>
+    <a href="{{ site.social.github }}" rel="noopener">GitHub</a>
+  </p>
+  {%- endif %}
+</aside>

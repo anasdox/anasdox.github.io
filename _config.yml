@@ -1,15 +1,17 @@
 # Jekyll config - GitHub Pages user site
 title: Anas Ameziane
-tagline: I help engineering teams spend more time framing the problem than building the solution.
+tagline: "AI-Native Product Engineering : du problème au produit, puis à la production."
 description: >-
-  Personal site of Anas Ameziane. Problem framing for software teams:
-  the art of the unbiased interview, the FIR methodology
-  (Facts, Insights, Recommendations), ubiquitous language and
-  executable specifications.
+  AI-Native Product Engineering : quand le code ne coûte presque plus rien,
+  le goulot passe à la compréhension du problème, à la spécification, à la
+  validation et à la mise en production. Essais, expériences et méthode
+  d'Anas Ameziane, ingénieur.
 author: Anas Ameziane
 email: anas.ameziane@gmail.com
 url: "https://anasdox.github.io"
 baseurl: ""
+lang: fr
+locale: fr_FR
 
 # Jekyll behaviour
 markdown: kramdown
@@ -18,27 +20,52 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Originaux anglais des billets traduits : servis a leur URL d'origine,
+# hors de site.posts (donc hors index et hors flux RSS francais).
+collections:
+  en:
+    output: true
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, lang: fr }
+  - scope: { path: "", type: en }
+    values: { layout: post, lang: en, seo: { type: BlogPosting } }
+
+feed:
+  path: feed.xml
 
 # Site-wide nav
 nav:
-  - title: Method
-    url: /method/
-  - title: About
-    url: /about/
-  - title: Experience
-    url: /experience/
-  - title: Projects
-    url: /projects/
-  - title: Blog
-    url: /blog/
-  - title: Contact
-    url: /contact/
+  - title: Articles
+    url: /articles/
+  - title: Labo
+    url: /labo/
+  - title: Playbook
+    url: /playbook/
+  - title: Méthode
+    url: /methode/
+  - title: À propos
+    url: /a-propos/
 
-# Social
+# Appel a l'action de fin de page. Pas de newsletter pour l'instant :
+# quand elle existera, renseigner newsletter.action (URL du formulaire
+# du fournisseur) et le bloc passe automatiquement en formulaire email.
+newsletter:
+  action: ""
+
+# Social (footer + JSON-LD Person via jekyll-seo-tag)
 social:
+  name: Anas Ameziane
   linkedin: https://www.linkedin.com/in/anasameziane-199b5058
   github: https://github.com/anasdox
   email: anas.ameziane@gmail.com
+  links:
+    - https://www.linkedin.com/in/anasameziane-199b5058
+    - https://github.com/anasdox
 
 exclude:
   - CLAUDE.md
@@ -47,3 +74,10 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+
+# Typographie ASCII dans le rendu (regle du site : pas de guillemets courbes,
+# pas de tirets longs ni d'ellipse auto-inseres). Les guillemets francais
+# « » ecrits a la main restent tels quels.
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  typographic_symbols: { hellip: "...", mdash: "---", ndash: "--" }

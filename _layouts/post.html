@@ -1,14 +1,47 @@
 ---
 layout: default
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  <p class="muted">
-    <time datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%B %-d, %Y" }}
-    </time>
-  </p>
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign words = content | number_of_words -%}
+{%- assign minutes = words | divided_by: 220 | at_least: 1 -%}
+<article class="post">
+  <header class="post-head">
+    <p class="meta">
+      {% include topic.html slug=page.topic %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date lang=lang %}</time>
+      <span>{{ minutes }} min</span>
+    </p>
+    <h1>{{ page.title }}</h1>
+    {%- if page.description %}<p class="dek">{{ page.description }}</p>{% endif %}
+    {%- if page.translation_key %}
+      {%- if lang == 'en' -%}
+        {%- assign other = site.posts | where: "translation_key", page.translation_key | first -%}
+      {%- else -%}
+        {%- assign other = site.en | where: "translation_key", page.translation_key | first -%}
+      {%- endif %}
+      {%- if other %}
+    <p class="translation"><a href="{{ other.url | relative_url }}" hreflang="{% if lang == 'en' %}fr{% else %}en{% endif %}">{% if lang == 'en' %}Version française{% else %}Read in English{% endif %}</a></p>
+      {%- endif %}
+    {%- endif %}
+  </header>
+
   {{ content }}
-  <hr>
-  <p class="muted"><a href="{{ '/blog/' | relative_url }}">&larr; All posts</a></p>
+
+  {% include cta.html lang=lang %}
+
+  {%- if lang != 'en' and page.topic %}
+    {%- assign related = site.posts | where: "topic", page.topic | where_exp: "p", "p.url != page.url" -%}
+    {%- if related.size > 0 %}
+  <nav class="related" aria-label="Même thème">
+    <p class="label">Même thème</p>
+    <ul>
+      {%- for p in related limit: 3 %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+    {%- endif %}
+  {%- endif %}
+
+  <p class="back"><a href="{{ '/articles/' | relative_url }}">{% if lang == 'en' %}All essays (in French){% else %}Tous les articles{% endif %}</a></p>
 </article>

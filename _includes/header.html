@@ -1,13 +1,15 @@
 <header class="site-header">
   <div class="inner">
-    <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-    <nav class="site-nav">
-      {% for item in site.nav %}
-        <a href="{{ item.url | relative_url }}"
-           {% if page.url contains item.url %}class="active"{% endif %}>
-          {{ item.title }}
-        </a>
-      {% endfor %}
+    <a href="{{ '/' | relative_url }}" class="site-title">
+      {{ site.title }}<span class="site-sub">AI-Native Product Engineering</span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      {%- for item in site.nav %}
+        {%- assign active = false -%}
+        {%- if page.url contains item.url -%}{%- assign active = true -%}{%- endif -%}
+        {%- if item.url == '/articles/' and page.collection == 'posts' -%}{%- assign active = true -%}{%- endif %}
+        <a href="{{ item.url | relative_url }}"{% if active %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor %}
     </nav>
   </div>
 </header>

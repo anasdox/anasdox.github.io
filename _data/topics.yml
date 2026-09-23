@@ -1,0 +1,29 @@
+# Themes editoriaux. Un billet porte un `topic` principal (affiche) et des
+# `tags` secondaires. Un theme sans billet n'est jamais affiche.
+- slug: ai-native
+  name: AI-Native Product Engineering
+  blurb: La thèse d'ensemble, du problème à la production.
+- slug: agentic
+  name: Agentic Engineering
+  blurb: Travailler avec des agents qui écrivent le code.
+- slug: discovery
+  name: Product Discovery
+  blurb: Comprendre le vrai problème avant d'écrire une ligne.
+- slug: context
+  name: Context Engineering
+  blurb: Donner au modèle ce que l'équipe sait sans l'écrire.
+- slug: specification
+  name: Spécification & BDD
+  blurb: Le comportement comme contrat entre humains et agents.
+- slug: validation
+  name: Validation & qualité
+  blurb: Garder le contrôle quand le code arrive plus vite qu'on ne le lit.
+- slug: cognitive-load
+  name: Charge cognitive
+  blurb: Ce que l'humain doit encore absorber, et comment le réduire.
+- slug: shipping
+  name: Livrer des produits
+  blurb: De la validation à la production, puis à l'apprentissage.
+- slug: field-notes
+  name: Notes de terrain
+  blurb: Expériences courtes, résultats bruts.

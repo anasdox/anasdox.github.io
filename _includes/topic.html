@@ -1,0 +1,2 @@
+{%- assign t = site.data.topics | where: "slug", include.slug | first -%}
+{%- if t -%}<a class="topic" href="{{ '/articles/' | relative_url }}#{{ t.slug }}">{{ t.name }}</a>{%- endif -%}
