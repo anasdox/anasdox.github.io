@@ -197,21 +197,33 @@ blockquote p:last-child { margin-bottom: 0; }
 
 .path {
   list-style: none;
-  padding: 0.7em 0;
-  margin: 1.8em 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 0;
+  margin: 2em 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.15em 0;
+  gap: 0.6rem;
+  counter-reset: step;
   font-family: var(--mono);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   letter-spacing: 0.02em;
-  line-height: 1.5;
+  line-height: 1.4;
 }
-.path li { margin: 0; white-space: nowrap; }
-/* La fleche suit le mot : une coupure de ligne tombe apres elle, jamais devant. */
-.path li:not(:last-child)::after { content: "->"; color: var(--soft); padding: 0 0.6em; }
+/* Etapes numerotees sur une piste : le chemin se lit comme une progression. */
+.path li {
+  flex: 1 1 auto;
+  margin: 0;
+  padding-top: 0.55em;
+  border-top: 2px solid var(--border);
+  white-space: nowrap;
+  counter-increment: step;
+}
+.path li::before {
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  color: var(--accent);
+  font-size: 0.9em;
+  margin-bottom: 0.1em;
+}
+.path li:first-child { border-top-color: var(--accent); }
 
 .signature { color: var(--soft); margin-top: 2.2em; }
 
@@ -345,6 +357,8 @@ blockquote p:last-child { margin-bottom: 0; }
   .hero { padding-top: 1.2rem; }
   .hero .lede { font-size: 1.06rem; }
   .pair { grid-template-columns: 1fr; }
+  .path { flex-wrap: wrap; row-gap: 1rem; }
+  .path li { flex: 1 1 calc(33.333% - 0.6rem); }
   h1 { font-size: 1.85rem; }
   .section { margin-top: 3rem; }
 }
