@@ -160,10 +160,8 @@ blockquote p:last-child { margin-bottom: 0; }
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.2rem 0.9rem;
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.02em;
+  gap: 0.2rem 1.1rem;
+  font-size: 0.98rem;
 }
 .site-nav a { color: var(--muted); text-decoration: none; padding: 0.2em 0; }
 .site-nav a:hover { color: var(--accent); }
@@ -323,7 +321,7 @@ blockquote p:last-child { margin-bottom: 0; }
   html, body { font-size: 17px; }
   .wrap { padding: 1.8rem 1rem 3rem; }
   .site-header, .site-footer { padding-left: 1rem; padding-right: 1rem; }
-  .site-nav { gap: 0.1rem 0.8rem; font-size: 0.76rem; }
+  .site-nav { gap: 0.1rem 0.9rem; font-size: 0.92rem; }
   .hero { padding-top: 1.2rem; }
   .hero .lede { font-size: 1.06rem; }
   .pair { grid-template-columns: 1fr; }
