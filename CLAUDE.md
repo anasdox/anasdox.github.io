@@ -113,6 +113,13 @@ actuel ».
   `_config.yml`. CSS écrit à la main dans `assets/css/style.css`. Pas de
   Tailwind, pas de framework, pas de JS **sauf Mermaid via CDN**, chargé
   **uniquement** sur les pages qui contiennent un diagramme.
+- **Direction visuelle (choisie le 2026-09-23 parmi 9 variantes)** :
+  « l'essai et le carnet ». Texte et titres en **serif système**
+  (Charter / Iowan / Georgia), navigation, libellés et métadonnées en
+  **monospace**, un seul accent **rouge profond** (`#a4282c`), blanc
+  cassé, aucun cadre (filets seulement). Les variantes explorées sont
+  sur la branche locale `explore-css`. Ne pas changer de direction sans
+  demander.
 - Plugins (tous sur liste blanche GH Pages) : `jekyll-feed`,
   `jekyll-seo-tag` (title, description, OpenGraph, JSON-LD),
   `jekyll-sitemap`, `jekyll-redirect-from` (anciennes URLs).
