@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+permalink: /ai-native-repositories/
+translation_key: context-repo
+description: "AI coding assistants fail less because of the model than because of the repository. What a context contract at the root of a repo should contain."
 title: "On AI-native repositories"
 date: 2026-05-20
 ---

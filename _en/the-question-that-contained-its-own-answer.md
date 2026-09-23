@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+permalink: /the-question-that-contained-its-own-answer/
+translation_key: question
+description: "A leading question in a discovery session cost two months of automation nobody used. The three interview rules I have followed since."
 title: "The question that contained its own answer"
 date: 2026-05-28
 ---

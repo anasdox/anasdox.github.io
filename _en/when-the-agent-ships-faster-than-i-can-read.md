@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+permalink: /when-the-agent-ships-faster-than-i-can-read/
+translation_key: agent
+description: "Coding agents collapsed the build phase to minutes. Specify, validate and review did not move. Why I now review behavior, not code."
 title: "When the agent ships faster than I can read"
 date: 2026-05-29
 ---

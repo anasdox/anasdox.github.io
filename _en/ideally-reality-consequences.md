@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+permalink: /ideally-reality-consequences/
+translation_key: irc
+description: "Three mandatory sections in every epic, none of which may contain a solution. Why the wall between problem and solution protects the engineer downstream."
 title: "Ideally, Reality, Consequences"
 date: 2026-05-29
 ---

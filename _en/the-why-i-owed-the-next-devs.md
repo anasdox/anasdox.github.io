@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+permalink: /the-why-i-owed-the-next-devs/
+translation_key: why
+description: "What I owed the developers who would read my specs, and why Facts, Insights, Recommendations is the structure I trust to carry the why."
 title: "The why I owed the next devs"
 date: 2026-05-29
 ---
