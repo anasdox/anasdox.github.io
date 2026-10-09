@@ -41,13 +41,14 @@ déjà publiés ; ceux qui n'en ont pas encore sont marqués comme tels.
   <li>
     <strong>Spécifier le comportement, relire le comportement</strong>
     <span>Le scénario exécutable comme unité de relecture et comme suite de non-régression.</span><br>
-    <a href="{{ '/quand-l-agent-livre-plus-vite-que-je-ne-lis/' | relative_url }}">Quand l'agent livre plus vite que je ne lis</a>
+    <a href="{{ '/quand-l-agent-livre-plus-vite-que-je-ne-lis/' | relative_url }}">Quand l'agent livre plus vite que je ne lis</a> ·
+    <a href="{{ '/les-agents-ont-rendu-le-bdd-rentable-pas-delegable/' | relative_url }}">Les agents ont rendu le BDD rentable. Pas délégable.</a>
   </li>
   <li>
     <strong>Des portes qualité déterministes</strong>
     <span>Ce qu'une machine peut attester, ce qu'un humain doit décider.</span><br>
-    <a href="{{ '/labo/' | relative_url }}">Expérience : workline</a> ·
-    <span class="todo">article à écrire</span>
+    <a href="{{ '/l-ia-produit-le-code-en-dix-minutes-votre-ci-a-t-elle-suivi/' | relative_url }}">L'IA produit le code en dix minutes. Votre CI a-t-elle suivi ?</a> ·
+    <a href="{{ '/labo/' | relative_url }}">Expérience : workline</a>
   </li>
   <li>
     <strong>Livrer, puis apprendre de la production</strong>
