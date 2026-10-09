@@ -1,6 +1,7 @@
 ---
 title: "Les agents ont rendu le BDD rentable. Pas délégable."
 date: 2026-10-09
+translation_key: bdd-agents
 topic: specification
 tags: [agentic, validation]
 description: "Le BDD mourait de son coût d'écriture et de maintenance. Les agents l'ont effondré. Le seul geste qu'ils ne font pas à votre place : signer le scénario."
@@ -36,9 +37,8 @@ phrases, laissait des scénarios décrire un comportement qui n'existait
 plus.
 
 Je l'ai vu de près. La discipline tenait tant que l'équipe avait du
-temps. Au premier
-sprint sous tension, les scénarios passaient en «&nbsp;on rattrapera
-après&nbsp;». On ne rattrapait pas. Le dossier `features/` devenait un
+temps. Au premier sprint sous tension, les scénarios passaient en
+«&nbsp;on rattrapera après&nbsp;». On ne rattrapait pas. Le dossier `features/` devenait un
 musée.
 
 ### Ce que les agents changent dans l'addition
